@@ -1,0 +1,385 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(237, 243, 235);
+
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body p {
+    color: #7C7C7C;
+}
+
+body a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* 渐变色 */
+:root {
+    --gradient-1: linear-gradient(to bottom right, rgb(107, 107, 255), blue);
+
+    --gradient-2: linear-gradient(to bottom right, rgb(80, 80, 255), rgb(253, 119, 119));
+
+    --gradient-3: linear-gradient(to bottom right, rgb(255, 207, 145), rgb(255, 111, 92));
+
+    --gradient-4: linear-gradient(to bottom right, #2af598, #009efd);
+}
+
+/* header */
+.header {
+    /* background-image: url("./images/header-bg.png"); */
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+.navbar {
+    background-color: rgb(91, 113, 94) !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: flex !important;
+    width: 100% !important;
+    padding: 10px 50px !important;
+    align-items: center !important;
+}
+
+.navbar ul {
+    right:0px;
+    text-align: center !important;
+    width: 58%;
+    position: absolute;
+}
+.navbar ul .second{
+    height:40px;
+}
+.navbar ul div li {
+    list-style: none !important;
+    display: inline-block !important;
+    /* margin: 0 25px !important; */
+    position: relative;
+    margin-left:-10px;
+    margin-right:18px;
+}
+
+.navbar ul div li a {
+    text-decoration: none !important;
+}
+
+.navbar ul div li a div {
+    color: whitesmoke;
+    float: left;
+}
+
+.ims {
+    top:-15px;
+    position: relative;
+    /* float:left; */
+    width: 28%;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.navbar ul .first ul {
+    display: none;
+    position: absolute;
+    right:0px;
+    top:40px;
+    width: 268%;
+    box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+    text-align: center;
+    border-radius: 10px;
+    background-color:  rgb(91, 113, 94);
+}
+.navbar ul .first ul li{
+    margin-left: 3px;
+    align-items: center;
+    text-align: center;
+}
+.navbar ul .first ul li a{
+    display: block;
+    color: black;
+}
+.navbar ul .first ul li img{
+    width:20%;
+}
+.container .nav ul li a:hover {
+    background-color: #e1e1e1;
+}
+
+.nav-item:hover {
+    color: whitesmoke !important;
+}
+
+.cool-link::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    top: 2em;
+    opacity: 0;
+    height: 3px;
+    background: #FE9901;
+    margin: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.cool-link:hover::after {
+    width: 90%;
+    height: 3px;
+    opacity: 1;
+    position: relative;
+    margin: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.logo {
+    width: 180px !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: var(--gradient-3);
+    border-radius: 50px !important;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom right, rgb(255, 111, 92), rgb(255, 207, 145));
+    ;
+}
+/* 主体内容 */
+.page{
+    position: absolute;
+    height: 9200px;
+    width: 1150px;
+    background-color: #d7dd7c;
+    right: 40px;
+    border-radius: 20px;
+    top: 150px;
+
+}
+.page h1{
+    text-align: center;
+    margin-top: 50px;
+
+}
+.page p{
+    margin-top:40px;
+}
+.fakepic{
+    width: 80%;
+    margin: 0 auto;
+    border: black solid 1px;
+    height: 450px;
+}
+.section{
+    width: 80%;
+    margin: 0 auto;
+}
+.side{
+    top:130px;
+    position:fixed;
+    height: 380px;
+    width: 270px;
+    background-color: rgb(91, 113, 94) ;
+    border-radius:0 20px 20px 0;
+    z-index: 0;
+    opacity: 1;
+    transition-property: opacity,left;
+    transition-duration:1.2s ;
+}
+.side h1{
+    font-size: 30px;
+}
+.si {
+    text-align: center;
+    color: azure;
+    height: 95px;
+    
+}
+.si {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.si h1{
+    font-size: 22px;
+}
+/* scroll to top */
+#scrolltp {
+    color: whitesmoke;
+    background: tomato;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+#scrolltp:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+.grid-wrapper,
+.section2-content {
+    flex-basis: 50%;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2em;
+    padding: 2rem;
+}
+
+.grid-wrapper img {
+    top:80px;
+    width: 100%;
+
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    margin-top: 9500px !important;
+    /* background-image: url("./images/footer-agency.png"); */
+    background-color: rgb(91, 113, 94) !important;
+    background-size: cover !important;
+}
+
+/* 独特的文字 */
+.private {
+    top: -80px;
+    background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(91, 113, 94) 50%) !important;
+    position: relative !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    z-index: 0;
+}
+
+.col3 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fleft {
+    margin-left: 75px;
+}
+
+.fmid {
+    margin-left: 65px;
+}
+
+.bottom {
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.footer1 h1 {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.footer1 i {
+    margin: 50px 20px;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.footer2 h4,
+.footer3 h4,
+.footer4 h4 {
+    color: whitesmoke !important;
+    font-weight: 400 !important;
+}
+
+.footer hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    padding: 30px;
+    font-weight: 400;
+}
+
+
+
+
+/* scroll to top */
+#scrolltp {
+    color: whitesmoke;
+    background: tomato;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+#scrolltp:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* animations */
+@keyframes scaleup {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+
+}
