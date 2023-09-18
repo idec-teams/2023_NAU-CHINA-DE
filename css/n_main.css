@@ -1,0 +1,510 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Sans MS";
+    background-color: rgb(237, 243, 235) !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 导航栏 */
+/* header */
+.header {
+    /* background-image: url("./images/header-bg.png"); */
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+.navbar {
+    background-color: rgb(91, 113, 94) !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: flex !important;
+    width: 100% !important;
+    padding: 10px 50px !important;
+    align-items: center !important;
+}
+
+.navbar ul {
+    right:0px;
+    text-align: center !important;
+    width: 58%;
+    position: absolute;
+    background-color: rgb(91, 113, 94) !important;
+}
+.navbar ul .second{
+    height:40px;
+}
+.navbar ul div li {
+    list-style: none !important;
+    display: inline-block !important;
+    /* margin: 0 25px !important; */
+    position: relative;
+    margin-left:-10px;
+    margin-right:18px;
+}
+
+.navbar ul div li a {
+    text-decoration: none !important;
+}
+
+.navbar ul div li a div {
+    color: whitesmoke;
+    float: left;
+}
+
+.ims {
+    top:-15px;
+    position: relative;
+    /* float:left; */
+    width: 28%;
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+.navbar ul .first ul {
+    display: none;
+    position: absolute;
+    right:-45px;
+    top:40px;
+    width: 268%;
+    box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
+    text-align: center;
+    border-radius: 10px;
+    background-color:  rgb(91, 113, 94);
+}
+.navbar ul .first ul li{
+    margin-left: 3px;
+    align-items: center;
+    text-align: left;
+}
+.navbar ul .first ul li a{
+    display: block;
+    color: black;
+}
+.navbar ul .first ul li img{
+    width:20%;
+}
+.container .nav ul li a:hover {
+    background-color: #e1e1e1;
+}
+
+.nav-item:hover {
+    color: whitesmoke !important;
+}
+
+.cool-link::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    top: 2em;
+    opacity: 0;
+    height: 3px;
+    background: #FE9901;
+    margin: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.cool-link:hover::after {
+    width: 90%;
+    height: 3px;
+    opacity: 1;
+    position: relative;
+    margin: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.logo {
+    width: 180px !important;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: var(--gradient-3);
+    border-radius: 50px !important;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom right, rgb(255, 111, 92), rgb(255, 207, 145));
+}
+
+/* 笔记本 */
+.notebook {
+    margin-top: 5%;
+    width: 100%;
+    min-width: 60rem;
+    margin-bottom: 10%;
+    display: table;
+}
+
+.left_div {
+    width: 12%;
+    height: 100%;
+    float: left;
+}
+
+.leftlabel {
+    color: rgb(91, 113, 94);
+    width: 60%;
+    float: right;
+    line-height: 60px;
+    margin-right: -15px;
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 1000;
+    text-align: center;
+    border: 5px solid rgb(91, 113, 94);
+    border-radius: 20% 20% 0 0;
+    position: relative;
+    font-family: "Comic Sans MS";
+    transform: rotate(270deg);
+}
+
+.leftlabel:hover {
+    border-bottom: transparent;
+    cursor:pointer;
+    height: 90px;
+    background-color: rgb(237, 243, 235) !important;
+}
+
+.click {
+    border-bottom: transparent;
+    height: 90px;
+    background-color: rgb(237, 243, 235) !important;
+}
+
+.top_div {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 0px;
+}
+
+.top_control {
+    flex: 1;
+}
+
+.toplabel {
+    height: 30px;
+    font-size: 1.5rem;
+    color: rgb(91, 113, 94);
+}
+
+/* 隐藏原始的单选框 */
+input[type="radio"] {
+    display: none;
+}
+
+/* 定义自定义单选框样式 */
+.radio-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* 定义边框样式 */
+.radio-label::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    /* 调整边框的宽度 */
+    height: 24px;
+    /* 调整边框的高度 */
+    border: 5px solid rgb(91, 113, 94);
+    border-radius: 4px;
+}
+
+/* 定义勾号样式 */
+.radio-label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    /* 调整勾号相对于单选框的垂直位置 */
+    left: 2px;
+    /* 调整勾号相对于单选框的水平位置 */
+    width: 15px;
+    /* 调整勾号的宽度 */
+    height: 45px;
+    /* 调整勾号的高度 */
+    border: 3px solid rgb(91, 113, 94);
+    border-width: 0px 7px 7px 0;
+    transform: rotate(30deg);
+    opacity: 0;
+}
+
+/* 当选中时显示勾号 */
+input[type="radio"]:checked+.radio-label::after {
+    opacity: 1;
+}
+
+.right_div {
+    width: 88%;
+    float: left;
+    /* display: table; */
+}
+
+.pad {
+    width: 95%;
+    min-height: 100%;
+    border: solid 13px rgb(91, 113, 94);
+    float: left;
+    /* margin-left: 12rem; */
+    border-radius: 20px;
+    padding-top: 3%;
+}
+
+
+/* 首页内容 */
+.red_title {
+    color: rgb(91, 113, 94);
+    font-weight: bolder;
+    /* font-size:70px !important; */
+    font-size: 4.5em !important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+hr {
+    color: rgb(91, 113, 94);
+    height: 0px;
+    border: 5px solid rgb(91, 113, 94);
+    padding-top: 0px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.mid_area {
+    width: 100%;
+    /* margin-top:200px; */
+    align-content: center;
+    margin-bottom: 15%;
+    margin-top: 5%;
+}
+
+
+
+.mid_control {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+
+
+.midbutton {
+    font-size: 3rem;
+    color: rgb(91, 113, 94);
+    text-align: left;
+    border: 0px;
+    padding: 10px;
+    border-radius: 1rem;
+}
+
+.midbutton:hover {
+    background-color: #FFCAE7;
+
+}
+
+/* Footer */
+.footer {
+    margin-top: 80px !important;
+    /* background-image: url("./images/footer-agency.png"); */
+    background-color: rgb(91, 113, 94) !important;
+    background-size: cover !important;
+}
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-gap: 2em;
+    padding: 2rem;
+}
+
+/* 独特的文字 */
+.private {
+    top: -80px;
+    background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(91, 113, 94) 50%) !important;
+    position: relative !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    z-index: 0;
+}
+
+.col3 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fleft {
+    margin-left: 75px;
+}
+
+.fmid {
+    margin-left: 65px;
+}
+
+.bottom {
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.footer1 h1 {
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.footer1 i {
+    margin: 50px 20px;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+.footer2 h4,
+.footer3 h4,
+.footer4 h4 {
+    color: whitesmoke !important;
+    font-weight: 400 !important;
+}
+
+.footer hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+    padding: 30px;
+    font-weight: 400;
+}
+
+
+
+
+/* scroll to top */
+#scrolltp {
+    color: whitesmoke;
+    background: tomato;
+    padding: 15px;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+#scrolltp:hover {
+    transform: scale(1.25);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* animations */
+@keyframes scaleup {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+
+}
+
+
+/* body { padding-top: 56px; } */
+.left-aligned {
+    margin-left: auto;
+}
+
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.bg-hero {
+    background-color: #7952b3;
+}
+
+/* CALLOUT */
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem
+}
+
+.bd-callout h4 {
+    margin-bottom: .25rem
+}
+
+.bd-callout p:last-child {
+    margin-bottom: 0
+}
+
+.bd-callout code {
+    border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+    margin-top: -.25rem
+}
+
+.bd-callout-info {
+    border-left-color: #5bc0de
+}
+
+.bd-callout-warning {
+    border-left-color: #f0ad4e
+}
+
+.bd-callout-danger {
+    border-left-color: #d9534f
+}
+
+/* footer */
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
