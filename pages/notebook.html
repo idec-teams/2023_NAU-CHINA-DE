@@ -19,61 +19,61 @@
     <div class="header">
         <div>
             <nav class="navbar navbar-expand-md">
-                <a href="" class="navbar-brand"><img src="./img/logo.png" alt="" class="logo"></a>
+                <a href="" class="navbar-brand"><img src="../img/logo.png" alt="" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" title="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="nav-list navbar-nav ms-auto">
                         <div class="second nav-item">
-                            <img class="ims" src="./img/icon1.png" alt="">
-                            <li class="cool-link first"><a href="index.html">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class="cool-link first"><a href="../index.html">
                                     <div class="nav-link">Home</div>
                                 </a>
                             </li>
                         </div>
                         <div class="second nav-item">
-                            <img class="ims" src="./img/icon1.png" alt="">
+                            <img class="ims" src="../img/icon1.png" alt="">
                             <li class="cool-link first"><a href="#">
                                     <div class="nav-link">Project</div>
                                 </a>
                                 <ul>
-                                    <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Description</div>
+                                    <li><a href="./项目页.html">
+                                            <div><img src="../img/icon2.png" alt="">Description</div>
                                         </a></li>
                                     <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Design</div>
+                                            <div><img src="../img/icon2.png" alt="">Design</div>
                                         </a></li>
                                     <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Results</div>
+                                            <div><img src="../img/icon2.png" alt="">Results</div>
                                         </a></li>
                                     <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Supplement</div>
+                                            <div><img src="../img/icon2.png" alt="">Supplement</div>
                                         </a></li>
                                     <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Protocol</div>
+                                            <div><img src="../img/icon2.png" alt="">Protocol</div>
                                         </a></li>
                                 </ul>
                             </li>
                         </div>
                         <div class="second nav-item">
-                            <img class="ims" src="./img/icon1.png" alt="">
-                            <li class=" cool-link first"><a href="#">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class=" cool-link first"><a href="./notebook.html">
                                     <div class="nav-link">Lab Notebook</div>
                                 </a>
                             </li>
                         </div>
                         <div class="second nav-item">
-                            <img class="ims" src="./img/icon1.png" alt="">
-                            <li class=" cool-link first"><a href="#">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class=" cool-link first"><a href="./TEAM页.html">
                                     <div class="nav-link">Team</div>
                                 </a>
                                 <ul>
-                                    <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Team</div>
+                                    <li><a href="./TEAM页.html">
+                                            <div><img src="../img/icon2.png" alt="">Team</div>
                                         </a></li>
                                     <li><a href="#">
-                                            <div><img src="./img/icon2.png" alt="">Collaboration</div>
+                                            <div><img src="../img/icon2.png" alt="">Collaboration</div>
                                         </a></li>
                                 </ul>
                             </li>
@@ -118,10 +118,6 @@
                         <input type="radio" id="radio2" name="radioOptions" value="Dl">
                         <label for="radio2" class="radio-label toplabel toplabel1">DRY LAB</label>
                     </div>
-                    <div class="top_control">
-                        <input type="radio" id="radio3" name="radioOptions" value="Hp">
-                        <label for="radio3" class="radio-label toplabel toplabel1">HUMAN PRACTICE</label>
-                    </div>
                 </div>
                 <div id="content">
                     <h1 class="red_title">NOTEBOOK</h1>
@@ -132,9 +128,6 @@
                         </div>
                         <div class="mid_control">
                             <a href="./MAY.&Dl.html" class="midbutton">DRY LAB</a>
-                        </div>
-                        <div class="mid_control">
-                            <a href="./MAY.&Hp.html" class="midbutton">HUMAN PRACTICE</a>
                         </div>
                     </div>
                 </div>
@@ -214,7 +207,7 @@
             img.classList.add("fade-out");
 
             img.addEventListener("transitionend", function () {
-                img.src = "./img/icon2.png";
+                img.src = "../img/icon2.png";
                 img.classList.remove("fade-out");
             }, { once: true });
         });
@@ -231,7 +224,7 @@
 
             img.addEventListener("transitionend", function () {
                 secondChild.style.display = "none";
-                img.src = "./img/icon1.png";
+                img.src = "../img/icon1.png";
                 img.classList.remove("fade-out");
             }, { once: true });
         });
