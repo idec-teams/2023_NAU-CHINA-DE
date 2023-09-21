@@ -1,4 +1,4 @@
-# iDEC 2023 | CPU_CHINA
+# iDEC 2023 | NAU_CHINA_DE
 
 This wiki template was built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). You are by no means confined to use this template. In fact, you are encouraged to build your own unique **static site** that best suits your project, and you are free to use any framework you like.
 
