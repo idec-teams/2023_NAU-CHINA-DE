@@ -40,8 +40,8 @@ body a {
 
 /* logo */
 .logo{
-    width: 150px;
-    height: 150px;
+    width: 70px !important;
+    height: 40px !important;
 }
 
 /* header */
@@ -163,10 +163,6 @@ body a {
     transition: all 0.5s ease-in-out;
 }
 
-
-.logo {
-    width: 180px !important;
-}
 
 .btn {
     padding: 10px 20px;

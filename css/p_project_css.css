@@ -160,7 +160,8 @@ body a {
 
 
 .logo {
-    width: 180px !important;
+    height: 40px !important;
+    width: 70px !important;
 }
 
 .btn {
