@@ -48,7 +48,7 @@ body a {
 }
 
 .navbar {
-    background-color: rgb(91, 113, 94) !important;
+    background-color: rgb(210, 230, 178) !important;
     top: 0 !important;
     left: 0 !important;
     display: flex !important;
@@ -417,7 +417,7 @@ opacity: 1;
 .footer {
     margin-top: 80px !important;
     /* background-image: url("./images/footer-agency.png"); */
-    background-color: rgb(91, 113, 94) !important;
+    background-color: rgb(37, 80, 42) !important;
     background-size: cover !important;
 }
 

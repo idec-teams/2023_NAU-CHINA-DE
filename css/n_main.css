@@ -25,7 +25,7 @@ a{
 }
 
 .navbar {
-    background-color: rgb(91, 113, 94) !important;
+    background-color: rgb(210, 230, 178) !important;
     top: 0 !important;
     left: 0 !important;
     display: flex !important;
@@ -39,7 +39,7 @@ a{
     text-align: center !important;
     width: 58%;
     position: absolute;
-    background-color: rgb(91, 113, 94) !important;
+    background-color: rgb(210, 230, 178) !important;
 }
 .navbar ul .second{
     height:40px;
@@ -58,7 +58,7 @@ a{
 }
 
 .navbar ul div li a div {
-    color: whitesmoke;
+    color: black;
     float: left;
 }
 
@@ -85,7 +85,7 @@ a{
     box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
     text-align: center;
     border-radius: 10px;
-    background-color:  rgb(91, 113, 94);
+    background-color:  rgb(210, 230, 178);
 }
 .navbar ul .first ul li{
     margin-left: 3px;
@@ -165,7 +165,7 @@ a{
 }
 
 .leftlabel {
-    color: rgb(91, 113, 94);
+    color: rgb(37, 80, 42);
     width: 60%;
     float: right;
     line-height: 60px;
@@ -174,7 +174,7 @@ a{
     font-size: 1.8rem;
     font-weight: 1000;
     text-align: center;
-    border: 5px solid rgb(91, 113, 94);
+    border: 5px solid rgb(37, 80, 42);
     border-radius: 20% 20% 0 0;
     position: relative;
     font-family: "Comic Sans MS";
@@ -209,7 +209,7 @@ a{
 .toplabel {
     height: 30px;
     font-size: 1.5rem;
-    color: rgb(91, 113, 94);
+    color: rgb(37, 80, 42);
 }
 
 /* 隐藏原始的单选框 */
@@ -234,7 +234,7 @@ input[type="radio"] {
     /* 调整边框的宽度 */
     height: 24px;
     /* 调整边框的高度 */
-    border: 5px solid rgb(91, 113, 94);
+    border: 5px solid rgb(37, 80, 42);
     border-radius: 4px;
 }
 
@@ -251,7 +251,7 @@ input[type="radio"] {
     /* 调整勾号的宽度 */
     height: 45px;
     /* 调整勾号的高度 */
-    border: 3px solid rgb(91, 113, 94);
+    border: 3px solid rgb(193, 225, 83);
     border-width: 0px 7px 7px 0;
     transform: rotate(30deg);
     opacity: 0;
@@ -271,7 +271,7 @@ input[type="radio"]:checked+.radio-label::after {
 .pad {
     width: 95%;
     min-height: 100%;
-    border: solid 13px rgb(91, 113, 94);
+    border: solid 13px rgb(37, 80, 42);
     float: left;
     /* margin-left: 12rem; */
     border-radius: 20px;
@@ -281,7 +281,7 @@ input[type="radio"]:checked+.radio-label::after {
 
 /* 首页内容 */
 .red_title {
-    color: rgb(91, 113, 94);
+    color: rgb(37, 80, 42);
     font-weight: bolder;
     /* font-size:70px !important; */
     font-size: 4.5em !important;
@@ -291,9 +291,9 @@ input[type="radio"]:checked+.radio-label::after {
 }
 
 hr {
-    color: rgb(91, 113, 94);
+    color: rgb(37, 80, 42);
     height: 0px;
-    border: 5px solid rgb(91, 113, 94);
+    border: 5px solid rgb(37, 80, 42);
     padding-top: 0px;
     margin-left: 100px;
     margin-right: 100px;
@@ -322,7 +322,7 @@ hr {
 
 .midbutton {
     font-size: 3rem;
-    color: rgb(91, 113, 94);
+    color: rgb(37, 80, 42);
     text-align: left;
     border: 0px;
     padding: 10px;
@@ -330,7 +330,7 @@ hr {
 }
 
 .midbutton:hover {
-    background-color: #FFCAE7;
+    background-color: rgb(247,233,125);
 
 }
 
@@ -338,7 +338,7 @@ hr {
 .footer {
     margin-top: 80px !important;
     /* background-image: url("./images/footer-agency.png"); */
-    background-color: rgb(91, 113, 94) !important;
+    background-color: rgb(37, 80, 42) !important;
     background-size: cover !important;
 }
 .grid-wrapper {
