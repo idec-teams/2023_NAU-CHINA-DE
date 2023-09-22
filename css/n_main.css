@@ -30,7 +30,7 @@ a{
     left: 0 !important;
     display: flex !important;
     width: 100% !important;
-    padding: 10px 50px !important;
+    padding: 1px 50px !important;
     align-items: center !important;
 }
 
@@ -136,7 +136,7 @@ a{
 
 .logo {
     width: 70px !important;
-    height: 40px !important;
+    height: 70px !important;
 }
 
 .btn {
@@ -168,6 +168,7 @@ a{
     color: rgb(37, 80, 42);
     width: 60%;
     float: right;
+    right:-12px;
     line-height: 60px;
     margin-right: -15px;
     margin-top: 3.5rem;
@@ -208,7 +209,7 @@ a{
 
 .toplabel {
     height: 30px;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: rgb(37, 80, 42);
 }
 
@@ -230,9 +231,9 @@ input[type="radio"] {
     content: "";
     display: inline-block;
     position: relative;
-    width: 24px;
+    width: 36px;
     /* 调整边框的宽度 */
-    height: 24px;
+    height: 36px;
     /* 调整边框的高度 */
     border: 5px solid rgb(37, 80, 42);
     border-radius: 4px;
@@ -243,13 +244,13 @@ input[type="radio"] {
     content: "";
     display: inline-block;
     position: absolute;
-    top: -15px;
+    top: -24px;
     /* 调整勾号相对于单选框的垂直位置 */
     left: 2px;
     /* 调整勾号相对于单选框的水平位置 */
-    width: 15px;
+    width: 25px;
     /* 调整勾号的宽度 */
-    height: 45px;
+    height: 60px;
     /* 调整勾号的高度 */
     border: 3px solid rgb(193, 225, 83);
     border-width: 0px 7px 7px 0;
@@ -350,7 +351,7 @@ hr {
 
 /* 独特的文字 */
 .private {
-    top: -80px;
+    top: -110px;
     background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(91, 113, 94) 50%) !important;
     position: relative !important;
     -webkit-background-clip: text !important;
@@ -379,7 +380,7 @@ hr {
 }
 
 .footer1 h1 {
-    font-size: 80px;
+    font-size: 120px;
     margin-bottom: 30px;
 }
 

@@ -41,7 +41,7 @@ body a {
 /* logo */
 .logo{
     width: 70px !important;
-    height: 40px !important;
+    height: 70px !important;
 }
 
 /* header */
@@ -59,7 +59,7 @@ body a {
     left: 0 !important;
     display: flex !important;
     width: 100% !important;
-    padding: 10px 50px !important;
+    padding: 1px 50px !important;
     align-items: center !important;
 }
 
@@ -522,8 +522,8 @@ body a {
 
 /* 独特的文字 */
 .private {
-    top: -80px;
-    background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(91, 113, 94) 50%) !important;
+    top: -110px;
+    background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(37, 80, 42) 50%) !important;
     position: relative !important;
     -webkit-background-clip: text !important;
     color: transparent !important;
@@ -551,7 +551,7 @@ body a {
 }
 
 .footer1 h1 {
-    font-size: 80px;
+    font-size: 120px;
     margin-bottom: 30px;
 }
 
