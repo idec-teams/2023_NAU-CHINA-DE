@@ -276,9 +276,12 @@ body a {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    grid-gap: 4em;
     padding: 2rem;
+    text-align: center;
+    position: relative;
+    
 }
 
 .grid-wrapper img {
@@ -289,13 +292,20 @@ body a {
 
 .section1 .grid-wrapper {
     padding: 4rem;
+    grid-template-columns: 250px 250px 250px 250px;
+    justify-content: center;
 }
 .card{
     position: relative;
 }
-
+.picture{
+    width: 200px;
+}
+.picture2{
+    width: 200px;
+}
 .section1-mem {
-    height: 500px;
+    height: 300px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -304,13 +314,15 @@ body a {
 }
 
 .grid-wrapper .section1-mem .picture {
-    height: 400px;
+    text-align: center;
+    height: 300px;
     width: 100%;
     border-radius: 30px 30px 0 0; 
     position: relative;
 }
 .grid-wrapper .section1-mem .picture2 {
-    height: 400px;
+    text-align: center;
+    height: 300px;
     width: 100%;
     border-radius: 30px 30px 0 0; 
     position: relative;
@@ -329,11 +341,12 @@ body a {
 }
 .qian img{
     position: relative;
+    top:50px;
 }
 .picture .qian{
     overflow: hidden;
     transform: rotateY(0deg);
-    background: rgb(143, 179, 148);
+    
 }
 .picture .hou{
     position: relative;
@@ -343,7 +356,7 @@ body a {
 .picture2 .qian{
     overflow: hidden;
     transform: rotateY(0deg);
-    background: rgb(174, 185, 130);
+   
 }
 .picture2 .hou{
     position: relative;
@@ -381,9 +394,7 @@ opacity: 1;
     display:block;
     
     height: 300px;
-    width: 300px;
     margin:0 auto;
-    border: black solid 1px;
 }
 .picture:hover .qian{
     transform: rotateY(-180deg);
