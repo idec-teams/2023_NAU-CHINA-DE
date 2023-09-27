@@ -163,7 +163,7 @@ a{
     z-index: 0;
 }
 .notebookText{
-    top:400px;
+    top:300px;
     left:0;
     position: absolute;
     z-index: 999;
