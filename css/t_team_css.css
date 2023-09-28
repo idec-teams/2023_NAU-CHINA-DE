@@ -292,7 +292,7 @@ body a {
 
 .section1 .grid-wrapper {
     padding: 4rem;
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: 230px 230px 230px 230px;
     justify-content: center;
 }
 .card{
@@ -317,14 +317,14 @@ body a {
     text-align: center;
     height: 300px;
     width: 100%;
-    border-radius: 30px 30px 0 0; 
+    /* border-radius: 30px 30px 0 0;  */
     position: relative;
 }
 .grid-wrapper .section1-mem .picture2 {
     text-align: center;
     height: 300px;
     width: 100%;
-    border-radius: 30px 30px 0 0; 
+    /* border-radius: 30px 30px 0 0;  */
     position: relative;
 }
 .ca{
@@ -336,12 +336,12 @@ body a {
     top:0;
     left:0;
     transition: transform .5s;
-    border-radius:  30px 30px 0 0;
+    /* border-radius:  30px 30px 0 0; */
     /* background-color: #009efd; */
 }
 .qian img{
     position: relative;
-    top:50px;
+    top:70px;
 }
 .picture .qian{
     overflow: hidden;
@@ -364,7 +364,7 @@ body a {
     background: rgb(174, 185, 130);
 }
 .hou .jtext{
-    border-radius:30px 30px 0 0;
+    /* border-radius:30px 30px 0 0; */
     color: aliceblue;
     font-size: 20px;
     font-weight: 700;
@@ -408,7 +408,7 @@ opacity: 1;
 .picture2:hover .hou{
     transform:rotateY(0deg);
 }
-.grid-wrapper .section1-mem .picture img {}
+/* .grid-wrapper .section1-mem .picture img {} */
 
 
 .section1-mem .content {
@@ -437,7 +437,7 @@ opacity: 1;
     top: -80px;
     background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(91, 113, 94) 50%) !important;
     position: relative !important;
-    -webkit-background-clip: text !important;
+    -webkit-background-clip : text !important;
     color: transparent !important;
     z-index: 0;
 }
