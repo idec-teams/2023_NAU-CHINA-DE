@@ -22,7 +22,8 @@
             <div>
                 <nav class="navbar navbar-expand-md">
                     <a href="" class="navbar-brand"><img src="../img/logo.png" alt="" class="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                        title="button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navmenu">
@@ -72,11 +73,11 @@
                                     </a>
                                     <ul>
                                         <li><a href="../pages/TEAM页.html">
-                                            <div><img src="../img/icon2.png" alt="">Team</div>
-                                        </a></li>
+                                                <div><img src="../img/icon2.png" alt="">Team</div>
+                                            </a></li>
                                         <li><a href="#">
-                                            <div><img src="../img/icon2.png" alt="">Collaboration</div>
-                                        </a></li>
+                                                <div><img src="../img/icon2.png" alt="">Collaboration</div>
+                                            </a></li>
                                     </ul>
                                 </li>
                             </div>
@@ -84,7 +85,7 @@
                     </div>
                 </nav>
             </div>
-    
+
         </div>
 
         <div class="headPicture">
@@ -304,6 +305,8 @@
     var selectedWeekValue = '';
     var selectedMonthValue = '';
     var radioOptionSelected = false;
+    // 声明按钮全局变量
+    let selectedOption = '';
 
     //监听月份的：hover
     for (const button of leftlabelButtons) {
@@ -318,17 +321,20 @@
     for (const button of buttons) {
         button.addEventListener('click', function (event) {
             // 获取周数按钮文字值
-        var buttonValue = button.innerHTML.trim();
-        selectedWeekValue = buttonValue;
+            var buttonValue = button.innerHTML.trim();
+            selectedWeekValue = buttonValue;
 
-        // 更新按钮点击状态
-        buttonClicked = true;
+            // 更新按钮点击状态
+            buttonClicked = true;
 
-        // 如果单选框已选择，则进行页面跳转
-        if (radioOptionSelected && selectedWeekValue && selectedMonthValue && getSelectedOption() !== "") {
-            var url = './' + selectedMonthValue + '&' + selectedWeekValue + '&' + getSelectedOption() + '.html';
-            window.location.href = url;
-        }
+            // 如果单选框已选择，则进行页面跳转
+            if (radioOptionSelected && selectedWeekValue && selectedMonthValue && getSelectedOption() !== "" && getSelectedOption() == "Wl") {
+                var url = './' + selectedMonthValue + '&' + selectedWeekValue + '&' + getSelectedOption() + '.html';
+                window.location.href = url;
+            } else if (radioOptionSelected && selectedMonthValue && getSelectedOption() !== "" && getSelectedOption() == "Dl") {
+                var url = './' + selectedMonthValue + '&' + getSelectedOption() + '.html';
+                window.location.href = url;
+            }
         });
     }
 
@@ -339,8 +345,11 @@
             radioOptionSelected = true;
 
             // 如果按钮已点击且存在按钮值，则进行页面跳转
-            if (buttonClicked && selectedWeekValue && selectedMonthValue) {
+            if (buttonClicked && selectedWeekValue && selectedMonthValue && getSelectedOption() == 'Wl') {
                 var url = './' + selectedMonthValue + '&' + selectedWeekValue + '&' + getSelectedOption() + '.html';
+                window.location.href = url;
+            } else if (selectedWeekValue && selectedMonthValue && getSelectedOption() == 'Dl') {
+                var url = './' + selectedMonthValue + '&' + getSelectedOption() + '.html';
                 window.location.href = url;
             }
         });
@@ -356,6 +365,39 @@
         });
         return selectedValue;
     }
+</script>
+
+<!-- 保持对应页面的唯一性 -->
+<script>
+    // 获取当前页面URL
+    var url = window.location.href;
+
+    // 获取URL中.html后缀前的后7位字符
+    var file = url.substr(url.lastIndexOf('/') + 1);
+    var fileName = file.substring(0, file.lastIndexOf('.'));
+
+    // 移除所有按钮的.click属性
+    var buttons = document.querySelectorAll(".leftlabel");
+    buttons.forEach(function (button) {
+        button.classList.remove("click");
+    });
+
+    // 获取前4位与button标签中的内容比较，对应的按钮添加.click属性
+    buttons.forEach(function (button) {
+        var buttonText = button.textContent.trim();
+        if (buttonText === fileName.substring(0, 4)) {
+            button.classList.add("click"); // 添加.click属性
+        }
+    });
+
+    // 获取后两位与单选框的value值比较，对应的单选框属性变为勾选
+    var radios = document.querySelectorAll("input[name='radioOptions']");
+    radios.forEach(function (radio) {
+        var radioValue = radio.value;
+        if (radioValue === fileName.substring(5, 7)) {
+            radio.checked = true; // 设置单选框为勾选状态
+        }
+    });
 </script>
 
 <script>
