@@ -21,7 +21,8 @@
         <div class="header">
             <nav class="navbar navbar-expand-md">
                 <a href="" class="navbar-brand"><img src="../img/logo.png" alt="" class="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" title="button">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    title="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navmenu">
@@ -93,16 +94,34 @@
         <div class="notebook">
             <div class="left_div">
                 <div>
-                    <button class="leftlabel leftlabel3">JUL.</button>
+                    <button class="leftlabel leftlabel3" id="julButton">JUL.</button>
+                    <div class="week-div" id="julWeekDiv">
+                        <button class="week-div-button">Week1</button>
+                        <button class="week-div-button">Week2</button>
+                        <button class="week-div-button">Week3</button>
+                        <button class="week-div-button">Week4</button>
+                        <button class="week-div-button">Week5</button>
+                    </div>
                 </div>
                 <div>
-                    <button class="leftlabel leftlabel4">AUG.</button>
+                    <button class="leftlabel leftlabel4" id="augButton">AUG.</button>
+                    <div class="week-div" id="augWeekDiv">
+                        <button class="week-div-button">Week1</button>
+                        <button class="week-div-button">Week2</button>
+                        <button class="week-div-button">Week3</button>
+                        <button class="week-div-button">Week4</button>
+                        <button class="week-div-button">Week5</button>
+                    </div>
                 </div>
                 <div>
-                    <button class="leftlabel leftlabel5">SEP.</button>
-                </div>
-                <div>
-                    <button class="leftlabel leftlabel6">OCT.</button>
+                    <button class="leftlabel leftlabel5" id="sepButton">SEP.</button>
+                    <div class="week-div" id="sepWeekDiv">
+                        <button class="week-div-button">Week1</button>
+                        <button class="week-div-button">Week2</button>
+                        <button class="week-div-button">Week3</button>
+                        <button class="week-div-button">Week4</button>
+                        <button class="week-div-button">Week5</button>
+                    </div>
                 </div>
             </div>
 
@@ -274,58 +293,42 @@
 <script>
 
     // 获取按钮和单选框的元素
-    var buttons = document.querySelectorAll('.left_div button');
+    const leftlabelButtons = document.getElementsByClassName('leftlabel');
+    const buttons = document.getElementsByClassName('week-div-button');
     var radioOptions = document.getElementsByName('radioOptions');
 
     // 记录按钮点击状态、所选按钮的值和单选框选择状态
     var buttonClicked = false;
-    var selectedButtonValue = '';
+    var selectedWeekValue = '';
+    var selectedMonthValue = '';
     var radioOptionSelected = false;
 
-    // 监听按钮的点击事件
-    buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-            // 移除之前被点击的按钮的样式
-            var previouslyClickedButton = document.querySelector('.click');
-            if (previouslyClickedButton) {
-                previouslyClickedButton.classList.remove('click');
-            }
-
-            button.classList.add('click');  // 添加当前被点击的按钮的样式
-
-            // 获取按钮文字值
+    //监听月份的：hover
+    for (const button of leftlabelButtons) {
+        button.addEventListener('mouseenter', function (event) {
+            // 获取月份按钮文字值
             var buttonValue = button.innerHTML.trim();
-            selectedButtonValue = buttonValue;
-
-            // 更新按钮点击状态
-            buttonClicked = true;
-
-            // 如果单选框已选择，则进行页面跳转
-            if (radioOptionSelected && selectedButtonValue && getSelectedOption() !== "") {
-                var url = './' + selectedButtonValue + '&' + getSelectedOption() + '.html';
-                window.location.href = url;
-            }
+            selectedMonthValue = buttonValue;
         });
-    });
+    }
 
-    // // 监听按钮的点击事件
-    // buttons.forEach(function (button) {
-    //     button.addEventListener('click', function () {
-    //         button.classList.toggle('click');
-    //         // 获取按钮文字值
-    //         var buttonValue = button.innerHTML.trim();
-    //         selectedButtonValue = buttonValue;
+    // 监听按钮的点击事件
+    for (const button of buttons) {
+        button.addEventListener('click', function (event) {
+            // 获取周数按钮文字值
+        var buttonValue = button.innerHTML.trim();
+        selectedWeekValue = buttonValue;
 
-    //         // 更新按钮点击状态
-    //         buttonClicked = true;
+        // 更新按钮点击状态
+        buttonClicked = true;
 
-    //         // 如果单选框已选择，则进行页面跳转
-    //         if (radioOptionSelected && selectedButtonValue && getSelectedOption() !== "") {
-    //             var url = './' + selectedButtonValue + '&' + getSelectedOption() + '.html';
-    //             window.location.href = url;
-    //         }
-    //     });
-    // });
+        // 如果单选框已选择，则进行页面跳转
+        if (radioOptionSelected && selectedWeekValue && selectedMonthValue && getSelectedOption() !== "") {
+            var url = './' + selectedMonthValue + '&' + selectedWeekValue + '&' + getSelectedOption() + '.html';
+            window.location.href = url;
+        }
+        });
+    }
 
     // 监听单选框的改变事件
     radioOptions.forEach(function (option) {
@@ -334,8 +337,8 @@
             radioOptionSelected = true;
 
             // 如果按钮已点击且存在按钮值，则进行页面跳转
-            if (buttonClicked && selectedButtonValue) {
-                var url = './' + selectedButtonValue + '&' + getSelectedOption() + '.html';
+            if (buttonClicked && selectedWeekValue && selectedMonthValue) {
+                var url = './' + selectedMonthValue + '&' + selectedWeekValue + '&' + getSelectedOption() + '.html';
                 window.location.href = url;
             }
         });
@@ -351,6 +354,122 @@
         });
         return selectedValue;
     }
+</script>
+
+<script>
+    // 在第一行添加以下变量
+    var isWeekDivHovered = false;
+    var hideWeekTimeout;
+
+    var julButton = document.getElementById("julButton");
+    var julWeekDiv = document.getElementById("julWeekDiv");
+    var augButton = document.getElementById("augButton");
+    var augWeekDiv = document.getElementById("augWeekDiv");
+    var sepButton = document.getElementById("sepButton");
+    var sepWeekDiv = document.getElementById("sepWeekDiv");
+    var isWeekDivHovered = false;
+    var hideWeekTimeout;
+
+    function showWeek(e, month) {
+        var weekDiv = document.getElementById(month + "WeekDiv");
+        var buttonRect = e.target.getBoundingClientRect();
+        var viewportOffset = buttonRect.top + window.pageYOffset;
+
+        weekDiv.style.left = buttonRect.left + 20 + "px";
+        weekDiv.style.top = viewportOffset + buttonRect.height + "px";
+        weekDiv.style.display = "block";
+
+        // 隐藏其他按钮的放大效果
+        julButton.classList.remove("highlighted");
+        augButton.classList.remove("highlighted");
+        sepButton.classList.remove("highlighted");
+
+        // 为当前按钮添加放大效果
+        e.target.classList.add("highlighted");
+
+        weekDiv.addEventListener("mouseenter", function () {
+            isWeekDivHovered = true;
+        });
+
+        weekDiv.addEventListener("mouseleave", function () {
+            isWeekDivHovered = false;
+            setTimeout(function () {
+                hideWeek(month);
+            }, 200);
+        });
+    }
+
+    function hideWeek(month) {
+        var weekDiv = document.getElementById(month + "WeekDiv");
+        if (isWeekDivHovered) return;
+        weekDiv.style.display = "none";
+        julButton.classList.remove("highlighted");
+        augButton.classList.remove("highlighted");
+        sepButton.classList.remove("highlighted");
+    }
+
+    julButton.addEventListener("mouseenter", function (e) {
+        showWeek(e, "jul");
+    });
+
+    julButton.addEventListener("mouseleave", function () {
+        setTimeout(function () {
+            hideWeek("jul");
+        }, 0);
+    });
+
+    julWeekDiv.addEventListener("mouseenter", function () {
+        isWeekDivHovered = true;
+    });
+
+    julWeekDiv.addEventListener("mouseleave", function () {
+        isWeekDivHovered = false;
+        hideWeekTimeout = setTimeout(function () {
+            hideWeek("jul");
+        }, 0);
+    });
+
+    augButton.addEventListener("mouseenter", function (e) {
+        showWeek(e, "aug");
+    });
+
+    augButton.addEventListener("mouseleave", function () {
+        setTimeout(function () {
+            hideWeek("aug");
+        }, 0);
+    });
+
+    augWeekDiv.addEventListener("mouseenter", function () {
+        isWeekDivHovered = true;
+    });
+
+    augWeekDiv.addEventListener("mouseleave", function () {
+        isWeekDivHovered = false;
+        hideWeekTimeout = setTimeout(function () {
+            hideWeek("aug");
+        }, 0);
+    });
+
+    sepButton.addEventListener("mouseenter", function (e) {
+        showWeek(e, "sep");
+    });
+
+    sepButton.addEventListener("mouseleave", function () {
+        setTimeout(function () {
+            hideWeek("sep");
+        }, 0);
+    });
+
+    sepWeekDiv.addEventListener("mouseenter", function () {
+        isWeekDivHovered = true;
+    });
+
+    sepWeekDiv.addEventListener("mouseleave", function () {
+        isWeekDivHovered = false;
+        hideWeekTimeout = setTimeout(function () {
+            hideWeek("sep");
+        }, 0);
+    });
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>

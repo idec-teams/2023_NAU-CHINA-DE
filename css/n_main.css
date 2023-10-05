@@ -181,7 +181,7 @@ a{
     display: table;
 }
 
-.left_div {
+/* .left_div {
     width: 12%;
     height: 100%;
     float: left;
@@ -210,6 +210,76 @@ a{
     cursor:pointer;
     height: 90px;
     background-color: rgb(237, 243, 235) !important;
+}
+
+.click {
+    border-bottom: transparent;
+    height: 90px;
+    background-color: rgb(237, 243, 235) !important;
+} */
+
+.left_div {
+    width: 12%;
+    height: 100%;
+    float: left;
+}
+
+.leftlabel {
+    color: rgb(37, 80, 42);
+    width: 60%;
+    float: right;
+    right: -12px;
+    line-height: 60px;
+    margin-right: -15px;
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+    font-weight: 1000;
+    text-align: center;
+    border: 5px solid rgb(37, 80, 42);
+    border-radius: 20% 20% 0 0;
+    position: relative; /* 添加相对定位属性 */
+    font-family: "Comic Sans MS";
+    transform: rotate(270deg);
+    transition: background-color 0.5s;
+}
+
+.leftlabel:hover {
+    border-bottom: transparent;
+    cursor: pointer;
+    height: 90px;
+    background-color: rgb(237, 243, 235) !important;
+}
+
+.highlighted{
+    border-bottom: transparent;
+    cursor: pointer;
+    height: 90px;
+    background-color: rgb(237, 243, 235) !important;
+}
+
+.week-div {
+    left:20px;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    top: calc(100% + 10px); /* 设置相对位置的偏移量，可根据实际需求调整 */
+    z-index: 9999;
+    display: none;
+    border-bottom: 2px solid rgb(37, 80, 42);
+}
+
+.week-div button {
+    height: 70px;
+    width:60px;
+    line-height: 60px;
+    background-color: rgb(237, 243, 235);
+    text-align: center;
+    border-bottom: 1px solid rgb(37, 80, 42);
+    cursor: pointer;
+
+}
+.week-div div:hover{
+    display: block;
 }
 
 .click {

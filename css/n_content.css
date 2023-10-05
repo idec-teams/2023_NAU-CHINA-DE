@@ -23,12 +23,11 @@
 }
 .section4 .number-right {
     position: relative;
+    width:8% !important;
+    height:auto;
     float: right;
-    top:-70px;
-    margin-right: -35px;
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(91, 113, 94);
+    top:-55px;
+    margin-right: -44px;
     z-index: 999;
 }
 .section4 .number-left {
@@ -43,24 +42,29 @@
 }
 
 .section4 .line {
-    width: 300px;
-    height: 4px;
-    background: #fc036b;
+    width: 200px;
+    height: 12px;
+    background: rgb(172, 169, 129);
     margin-left: 20px;
     margin-bottom: 5px;
-    border-radius: 5px;
     position: relative; /* 添加相对定位 */
 }
 
 .section4 .vertical-line {
-    border-style: dashed;
-    border-color:rgb(91, 113, 94);
+    /* border-style: dashed;
+    border-color:rgb(91, 113, 94); */
     float: left;
-    width: 3px;
+    width: 15px;
     height: 4000px;
     margin-bottom: 5px;
     border-radius: 5px;
     position: relative; /* 添加相对定位 */
+    transform: rotateY('90deg');
+    border: none;
+    background-image: linear-gradient(to bottom, transparent 50%, rgb(91, 113, 94) 50%) !important;
+    background-position: 0 0;
+    background-size: 20px 50px;
+    background-repeat: repeat-y;
     transform: rotateY('90deg');
 }
 
@@ -87,7 +91,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: red;
+    background-color: rgb(215, 156, 141);
     border-radius: 50%;
 }
 .circle-yellow{
@@ -95,7 +99,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: rgb(221, 221, 23);
+    background-color: rgb(252, 227, 166);
     border-radius: 50%;
 }
 .circle-green{
@@ -103,6 +107,6 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: green;
+    background-color: rgb(215, 231, 161);
     border-radius: 50%;
 }
