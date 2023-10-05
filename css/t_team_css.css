@@ -62,6 +62,13 @@ body a {
     --gradient-4: linear-gradient(to bottom right, #2af598, #009efd);
 }
 
+
+/* logo */
+.logo{
+    width: 70px !important;
+    height: 70px !important;
+}
+
 /* header */
 .header {
     /* background-image: url("./images/header-bg.png"); */
@@ -77,7 +84,7 @@ body a {
     left: 0 !important;
     display: flex !important;
     width: 100% !important;
-    padding: 10px 50px !important;
+    padding: 1px 50px !important;
     align-items: center !important;
 }
 
@@ -86,9 +93,12 @@ body a {
     text-align: center !important;
     width: 58%;
     position: absolute;
+    background-color: rgb(210, 230, 178) !important;
+    display: flex;
 }
 .navbar ul .second{
     height:40px;
+    width:270px;
 }
 .navbar ul div li {
     list-style: none !important;
@@ -104,15 +114,15 @@ body a {
 }
 
 .navbar ul div li a div {
-    color: whitesmoke;
+    color: black;
     float: left;
 }
 
 .ims {
-    top:-15px;
+    top:-10px;
     position: relative;
     /* float:left; */
-    width: 28%;
+    width: 22%;
     opacity: 1;
 }
 
@@ -125,18 +135,18 @@ body a {
 .navbar ul .first ul {
     display: none;
     position: absolute;
-    right:0px;
+    right:-45px;
     top:40px;
     width: 268%;
     box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
     text-align: center;
     border-radius: 10px;
-    background-color:  rgb(91, 113, 94);
+    background-color:  rgb(210, 230, 178);
 }
 .navbar ul .first ul li{
     margin-left: 3px;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 .navbar ul .first ul li a{
     display: block;
@@ -180,11 +190,6 @@ body a {
 }
 
 
-.logo {
-    width: 70px !important;
-    height: 40px !important;
-}
-
 .btn {
     padding: 10px 20px;
     background: var(--gradient-3);
@@ -193,49 +198,7 @@ body a {
 
 .btn:hover {
     background: linear-gradient(to bottom right, rgb(255, 111, 92), rgb(255, 207, 145));
-    ;
 }
-
-/* .row {
-    display:flex;
-    align-items:center;
-    padding-top: 5rem;
-}
-
-.header-content ,.hero-img{
-    flex-basis: 50%;
-    padding: 5rem;
-}
-
-.header-content h1{
-    font-size:7vmin;
-    margin-bottom: 30px;
-    margin-top: 7rem;
-    color: #4642ff;
-}
-
-.header-content p{
-    margin-bottom: 30px;
-} 
-
-.learnmore{
-    padding: 10px 20px;
-    border: 1px solid tomato;
-    border-radius: 50px;
-    color:tomato;
-    margin-right: 30px;
-}
-
-.learnmore:hover{
-    background: var(--gradient-3);
-    border:none;
-    color:whitesmoke;
-}
-
-.hero-img img{
-    margin-left: 80px;
-} */
-
 /* 头图部分 */
 .section0 img {
     width: 100%;
@@ -274,7 +237,11 @@ body a {
 .section1 {
     margin-top: 600px;
 }
+.section1 .title1{
+    display: flex;
+    justify-content: center;
 
+}
 .section1-h1 {
     font-size: 40px;
     text-align: center;
@@ -317,6 +284,12 @@ body a {
 .section1 .grid-wrapper {
     padding: 4rem;
     grid-template-columns: 230px 230px 230px 230px;
+    justify-content: center;
+}
+.section1 .g2{
+    padding: 4rem;
+    grid-gap: 8em;
+    grid-template-columns: 230px 230px 230px;
     justify-content: center;
 }
 .card{
@@ -402,6 +375,21 @@ body a {
     transition-duration:1s ; */
     text-align: center;
 }
+.c .jtext2{
+    /* border-radius:30px 30px 0 0; */
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 0%;
+    opacity: 0;
+    background-color: rgba(10, 20, 20, 0.61);
+    transition-property: height,opacity;
+    transition-duration:0.8s ;
+    text-align: center;
+}
 /* .picture:hover .jtext{
     transition-property: height,opacity;
     transition-duration:1s ;
@@ -431,6 +419,28 @@ opacity: 1;
 }
 .picture2:hover .hou{
     transform:rotateY(0deg);
+}
+.picture .c{
+    transform:rotateY(0deg);
+}
+.picture2 .c{
+    transform:rotateY(0deg);
+}
+.picture:hover .c{
+    transform:rotateY(0deg);
+}
+.picture2:hover .c{
+    transform:rotateY(0deg);
+}
+.picture:hover .jtext2{
+    transform:rotateY(0deg);
+    height: 100%;
+    opacity: 1;
+}
+.picture2:hover .jtext2{
+    transform:rotateY(0deg);
+    height: 100%;
+    opacity: 1;
 }
 /* .grid-wrapper .section1-mem .picture img {} */
 
