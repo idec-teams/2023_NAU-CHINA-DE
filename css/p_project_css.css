@@ -41,6 +41,55 @@ body a {
     --gradient-4: linear-gradient(to bottom right, #2af598, #009efd);
 }
 
+/* 头图 */
+.headPicture{
+    position: relative;
+    display: block;
+}
+.notebookImg{
+    /* position: absolute; */
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+.notebookText{
+    top:200px;
+    left:0;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    
+}
+.notebookText2{
+    top:150px;
+    left:0;
+    position: absolute;
+    z-index: 999;
+    left:10%;
+    width: 80%;
+    height: auto; 
+    opacity: 0.7;
+}
+.notebookText3{
+    top:200px;
+    left:0;
+    position: absolute;
+    z-index: 999;
+    left:10%;
+    width: 80%;
+    height: auto; 
+    opacity: 0.7;
+}
+
+
+/* logo */
+.logo{
+    width: 70px !important;
+    height: 70px !important;
+}
+
 /* header */
 .header {
     /* background-image: url("./images/header-bg.png"); */
@@ -56,7 +105,7 @@ body a {
     left: 0 !important;
     display: flex !important;
     width: 100% !important;
-    padding: 10px 50px !important;
+    padding: 1px 50px !important;
     align-items: center !important;
 }
 
@@ -65,9 +114,12 @@ body a {
     text-align: center !important;
     width: 58%;
     position: absolute;
+    background-color: rgb(210, 230, 178) !important;
+    display: flex;
 }
 .navbar ul .second{
     height:40px;
+    width:270px;
 }
 .navbar ul div li {
     list-style: none !important;
@@ -83,15 +135,15 @@ body a {
 }
 
 .navbar ul div li a div {
-    color: whitesmoke;
+    color: black;
     float: left;
 }
 
 .ims {
-    top:-15px;
+    top:-10px;
     position: relative;
     /* float:left; */
-    width: 28%;
+    width: 22%;
     opacity: 1;
 }
 
@@ -104,18 +156,18 @@ body a {
 .navbar ul .first ul {
     display: none;
     position: absolute;
-    right:0px;
+    right:-45px;
     top:40px;
     width: 268%;
     box-shadow: 0 10px 10px rgba(10, 20, 20, .20), 0 0 10px rgba(10, 20, 20, .20);
     text-align: center;
     border-radius: 10px;
-    background-color:  rgb(91, 113, 94);
+    background-color:  rgb(210, 230, 178);
 }
 .navbar ul .first ul li{
     margin-left: 3px;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 .navbar ul .first ul li a{
     display: block;
@@ -159,11 +211,6 @@ body a {
 }
 
 
-.logo {
-    height: 40px !important;
-    width: 70px !important;
-}
-
 .btn {
     padding: 10px 20px;
     background: var(--gradient-3);
@@ -172,7 +219,6 @@ body a {
 
 .btn:hover {
     background: linear-gradient(to bottom right, rgb(255, 111, 92), rgb(255, 207, 145));
-    ;
 }
 /* 主体内容 */
 .page{
@@ -182,7 +228,7 @@ body a {
     background-color: #d7dd7c;
     right: 40px;
     border-radius: 20px;
-    top: 150px;
+    top: 980px;
 
 }
 .page h1{
@@ -211,9 +257,9 @@ body a {
     background-color: rgb(91, 113, 94) ;
     border-radius:0 20px 20px 0;
     z-index: 0;
-    opacity: 1;
+    opacity: 0;
     transition-property: opacity,left;
-    transition-duration:1.2s ;
+    transition-duration:0.8s ;
 }
 .side h1{
     font-size: 30px;

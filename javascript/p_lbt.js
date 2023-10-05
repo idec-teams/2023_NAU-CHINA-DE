@@ -4,11 +4,11 @@ const target = document.querySelector(".footer");
 
 
 window.onscroll=function(){
-    if(target.getBoundingClientRect().top<864)
+    if(target.getBoundingClientRect().top<9587)
     {
-        side.style.opacity=0;
+        side.style.opacity=100;
     }
-    else{side.style.opacity=100;}
+    else{side.style.opacity=0;}
     console.log(target.getBoundingClientRect().top)
 }
 

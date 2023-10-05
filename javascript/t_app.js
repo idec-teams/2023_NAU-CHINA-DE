@@ -28,10 +28,10 @@ function frount() {
             rimg -= len;
         }
 
-        imgs[limg].style.transform= `translateX(`+(-150)*(i+1)+`px) translateZ(`+(200-i*100)+`px) rotateY(30deg)`;
-        imgs[rimg].style.transform = `translateX(`+(150)*(i+1)+`px) translateZ(`+(200-i*100)+`px) rotateY(-30deg)`;
+        imgs[limg].style.transform= `translateX(`+(-400)*(i+1)+`px) translateZ(`+(-i*400)+`px) rotateY(45deg)`;
+        imgs[rimg].style.transform = `translateX(`+(400)*(i+1)+`px) translateZ(`+(-i*400)+`px) rotateY(-45deg)`;
     }
-    imgs[current].style.transform = `translateZ(300px)`;
+    imgs[current].style.transform = `translateZ(280px)`;
 };
 
 function bind() {
