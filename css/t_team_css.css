@@ -289,7 +289,7 @@ body a {
 .section1 .g2{
     padding: 4rem;
     grid-gap: 8em;
-    grid-template-columns: 230px 230px 230px;
+    grid-template-columns: 230px 230px ;
     justify-content: center;
 }
 .card{
