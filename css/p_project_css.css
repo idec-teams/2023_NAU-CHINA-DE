@@ -1,7 +1,10 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
 
+@font-face {
+    font-family: myFont;
+    src: url(../css/江西拙楷2.0.TTF) format('truetype');
+}
 /* Global */
 * {
     margin: 0;
@@ -10,7 +13,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: myFont , Arial, sans-serif !important;
+
     background-color: rgb(237, 243, 235);
 
 }
@@ -18,8 +22,17 @@ li{
     text-decoration: none;
     list-style: none;
 }
+table, tr, td, th, thead, tbody {
+    position: static;
+}
 
-
+table,
+td,
+th {
+  text-align: center;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
 
 body p {
     color: #7C7C7C;
@@ -40,7 +53,15 @@ body a {
 
     --gradient-4: linear-gradient(to bottom right, #2af598, #009efd);
 }
-
+.benti p{
+    color: black;
+}
+.benti img{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+}
+.page .gs{
+    box-shadow: none;
+}
 /* 头图 */
 .headPicture{
     position: relative;
@@ -59,7 +80,7 @@ body a {
     z-index: 999;
     width: 100%;
     height: auto;
-    opacity: 0.7;
+    opacity: 0.75;
     
 }
 .notebookText2{
@@ -67,10 +88,10 @@ body a {
     left:0;
     position: absolute;
     z-index: 999;
-    left:10%;
-    width: 80%;
+    left:23%;
+    width: 55%;
     height: auto; 
-    opacity: 0.7;
+    opacity: 0.75;
 }
 .notebookText3{
     top:200px;
@@ -80,7 +101,7 @@ body a {
     left:10%;
     width: 80%;
     height: auto; 
-    opacity: 0.7;
+    opacity: 0.75;
 }
 
 
@@ -223,8 +244,7 @@ body a {
 /* 主体内容 */
 .page{
     position: absolute;
-    height: 9200px;
-    width: 1150px;
+    width: 1250px;
     background-color: #d7dd7c;
     right: 40px;
     border-radius: 20px;
@@ -237,7 +257,13 @@ body a {
 
 }
 .page p{
-    margin-top:40px;
+    margin-top:10px;
+}
+.page div{
+    margin-top: 40px;
+}
+.page .s2 p{
+    margin-top:60px;
 }
 .fakepic{
     width: 80%;
@@ -253,13 +279,16 @@ body a {
     top:130px;
     position:fixed;
     height: 380px;
-    width: 270px;
+    width: 190px;
     background-color: rgb(91, 113, 94) ;
     border-radius:0 20px 20px 0;
     z-index: 0;
     opacity: 0;
     transition-property: opacity,left;
     transition-duration:0.8s ;
+}
+.sidesup{
+    height: 190px;
 }
 .side h1{
     font-size: 30px;
@@ -331,6 +360,12 @@ body a {
     /* background-image: url("./images/footer-agency.png"); */
     background-color: rgb(37, 80, 42) !important;
     background-size: cover !important;
+}
+.fs{
+    margin-top: 18200px !important;
+}
+.fp{
+    margin-top: 9800px !important;
 }
 
 /* 独特的文字 */

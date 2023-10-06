@@ -1,10 +1,10 @@
 
 const side = document.querySelector(".side");
-const target = document.querySelector(".footer");
+const target = document.querySelector(".headPicture");
 
 
 window.onscroll=function(){
-    if(target.getBoundingClientRect().top<9587)
+    if(target.getBoundingClientRect().top<-810)
     {
         side.style.opacity=100;
     }
