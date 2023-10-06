@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="all" href="../css/n_main.css">
+    <link rel="stylesheet" href="../css/n_content.css">
+
+    <!-- i字体 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/n_bootstrap.css">
+</head>
+
+<body>
+    <!-- 头部导航栏 -->
+    <div >
+        <div class="header">
+            <nav class="navbar navbar-expand-md">
+                <a href="" class="navbar-brand"><img src="../img/logo.png" alt="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+                    title="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="nav-list navbar-nav ms-auto">
+                        <div class="second nav-item">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class="cool-link first"><a href="../index.html">
+                                    <div class="nav-link">Home</div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="second">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class="nav-item cool-link first"><a href="../index.html">
+                                    <div class="nav-link">Project</div>
+                                </a>
+                                <ul>
+                                    <li><a href="../pages/Description.html">
+                                            <div><img src="../img/icon2.png" alt="">Description</div>
+                                        </a></li>
+                                    <li><a href="../pages/Design.html">
+                                            <div><img src="../img/icon2.png" alt="">Design</div>
+                                        </a></li>
+                                    <li><a href="../pages/Results.html">
+                                            <div><img src="../img/icon2.png" alt="">Results</div>
+                                        </a></li>
+                                    <li><a href="../pages/Supplement.html">
+                                            <div><img src="../img/icon2.png" alt="">Supplement</div>
+                                        </a></li>
+                                    <li><a href="../pages/Protocol.html">
+                                            <div><img src="../img/icon2.png" alt="">Protocol</div>
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <div class="second nav-item">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class=" cool-link first"><a href="./notebook.html">
+                                    <div class="nav-link">Lab Notebook</div>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="second nav-item">
+                            <img class="ims" src="../img/icon1.png" alt="">
+                            <li class=" cool-link first"><a href="./TEAM页.html">
+                                    <div class="nav-link">Team</div>
+                                </a>
+                                <ul>
+                                    <li><a href="./TEAM页.html">
+                                            <div><img src="../img/icon2.png" alt="">Team</div>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <div><img src="../img/icon2.png" alt="">Collaboration</div>
+                                        </a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- notebook部分 -->
+        <div class="notebook">
+            <div class="left_div">
+                <div>
+                    <button class="leftlabel leftlabel3" id="julButton">JUL.</button>
+                    <div class="week-div" id="julWeekDiv">
+                        <button class="week-div-button">Week1</button>
+                        <button class="week-div-button">Week2</button>
+                        <button class="week-div-button">Week3</button>
+                        <button class="week-div-button">Week4</button>
+                        <button class="week-div-button">Week5</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="leftlabel leftlabel4" id="augButton">AUG.</button>
+                    <div class="week-div" id="augWeekDiv">
+                        <button class="week-div-button">Week1</button>
+                        <button class="week-div-button">Week2</button>
+                        <button class="week-div-button">Week3</button>
+                        <button class="week-div-button">Week4</button>
+                        <button class="week-div-button">Week5</button>
+                    </div>
+                </div>
+                <div>
+                    <button class="leftlabel leftlabel5" id="sepButton">SEP.</button>
+                    <div class="week-div" id="sepWeekDiv">
+                        <button class="week-div-button">Week1</button>
+                        <button class="week-div-button">Week2</button>
+                        <button class="week-div-button">Week3</button>
+                        <button class="week-div-button">Week4</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="right_div" class="right_div">
+                <div class="pad">
+                    <div class="top_div">
+                        <div class="top_control">
+                            <input type="radio" id="radio1" name="radioOptions" value="Wl">
+                            <label for="radio1" class="radio-label toplabel toplabel1">WET LAB</label>
+                        </div>
+                        <div class="top_control">
+                            <input type="radio" id="radio2" name="radioOptions" value="Dl">
+                            <label for="radio2" class="radio-label toplabel toplabel1">DRY LAB</label>
+                        </div>
+                    </div>
+                    <div id="content">
+                        <section class="section4">
+                            <div class="total">
+                                <div class="left">
+                                    
+                                    <h1 class="title">Day1</h1>
+                                    <img src="../img/number1.png" alt="" class="number-right">
+                                    <img src="../img/n_line.png" alt="" class="line">
+                                    <p>2023/8/15</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.Colony PCR to verfied if the selected colonies containing the recombinant plasimd of AP-A-fdeR-RBS</p>
+                                        <p>2.Plasmid Extration for SplitC and sequence.
+                                        </p>
+                                        <p>3.Culture starin containing the plasmid of  SplitD for two test tubes and Plasmid Extraction of the plasmid of SplitD</p>
+                                        <p>4.Golden Gate Assembly of the plasmid of SplitD, SpliC and AP-P-T7RNAP.</p>
+                                        <p>5.Incubate S2208 starin in 5 mL 2×YT liquid medium containing Amp. </p>
+                                        <p>6.Preparation of 4 mL of Ampicillin at a concentration of 50mg/ mL.</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>2.Concentation:</p>
+                                        <p>SplitD-1:70.9 ng/μL, 1.74, 1.10</p>
+                                        <p>SplitD-2:40 ng/μL.45, 1.81, 1.43</p>
+                                        <p>3.Concentration:</p>
+                                        <p>SpliC:853.15 ng/μL, 1.97, 2.47</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Y.Y.X</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>Consult literature to look for suitable background.</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: L.Y</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>Colony PCR to verfied if the selected colonies containing 
+                                            the recombinant plasimd of pQE and FdeR recombinant plasmid</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>(1)Failed</p>
+                                    </div>
+                                    
+                                    <h1 class="title">Day3</h1>
+                                    <img src="../img/number3.png" alt="" class="number-right">
+                                    <img src="../img/n_line.png" alt="" class="line">
+                                    <p>2023/8/17</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: H.T.Q</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1. error-prone PCR to obtain mutant fragments (25 round)</p>
+                                        <p>repeat the experient last day</p>
+                                        <p>2. Pre-experiment for liquiritigenin ( positive clone-2/14)</p>
+                                        <p>(1) Dilute the bacteria 100-fold with LB*100mL medium, add 100μL antibiotics (Kan) (1:1000) </p>
+                                        <p>(2) Culture to 0D600 to reach 0.6 (about 2 hours)</p>
+                                        <p>(3) Add liquiritigenin according to the concentration gradient of 0mM, 0.05 mM, 0.1 mM, 0.15 mM, 0.2 mM, 0.3 mM,  0.4 mM, 0.5 mM (There are 8 groups in total, plus PBS group)</p>
+                                        <p>(4) Induction culture at 37 °C for 12 h...(to be continue...)</p>
+                                        <p>3. Preservation of some strains using a 50% glycerol solution at -80℃</p>
+                                        <p>Including: positive clone- 2*4, positive clone- 14*6, NG-RS in PUC57</p>
+                                        <p>4. culture 2023quanhecheng gene in PUC57strain</p>
+                                        <p>Resistance: Amp (bla gene)</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Y.Y.X</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.Plasmid extraction to obtain the second and the fourteenth fdeR-pQE-P22 recombinant plasmids.</p>
+                                        <p>2.PCR to obtain split C and split D from the second and the fourteenth fdeR-pQE-P22 recombinant plasmids to change their RBS of eGFP.</p>
+                                        <p>3.Fastpure Gel DNA extraction to obtain split C and split D from the second and the fourteenth fdeR-pQE-P22 recombinant plasmids</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>1.DNA concentration: the second </p>
+                                        <p>fdeR-pQE-P22 recombinant plasmid-244.89 ng/μL; the fourteenth fdeR-pQE-P22 recombinant plasmid-299.61 ng/μL.</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.PCR to verify the T7RNAP in the plasmid of pBRT137-SP-T7RNAP.</p>
+                                        <p>2.PCR to obtain fragment pQE-fdeR-SplitC and pQE-fdeR-SplitD.</p>
+                                        <p>3.Gel DNA Extraction for pQE-fdeR-SplitC and pQE-fdeR-SplitD.</p>
+                                        <p>4.Culture pBT137-SplitC starin</p>
+                                        <p>5.Culture strains containing the plasimd of pQE-fdeR-2 and divide them into 8 groups, respectly.Each group was added different concentration of Liquiritigenin (0, 0.05, 0.10, 0.15, 0.20, 0.30, 0.40, 0.50mM) and cultured for 12 h.</p>
+                                        <p>6.Autoclave sterilization of 1.5 mL, 2 mL, 15 mL, 50 mL centrifuge tubes, 50% glycerol, 10μL, 200μL, 1000μL pipette tips, LB liquid medium sterilization</p>
+                                        <p>7.Obtain pBT137-SP-T7RNAP phage</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>1.There is no band of the fragment T7RNAP.</p>
+                                        <p>2.The band length of pQE-fdeR-SplitD-2D and pQE-fdeR-SplitD-14D were right, but the length of pQE-fdeR-SplitC-2C and pQE-fdeR-SplitC-14C were less than 2400bp</p>
+                                        <p>3.Concentration:</p>
+                                        <p>pQE-fdeR-SplitD-14D: 46.37 ng/μL, 1.96, 1.91</p>
+                                        <p>pQE-fdeR-SplitD-2D: 27.25 ng/μL, 1.96, 1.17</p>
+                                        <p>pQE-fdeR-SplitC-14C: 95.15 ng/μL, 2.02, 2.30</p>
+                                        <p>pQE-fdeR-SplitC-2C: 105.22 ng/μL, 1.87, 1.69</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: L.Y</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>(1)Fastpure Gel DNA extraction Of  AP-T7-A-P22-FdeR Fragment  and GFP-positive Fragment</p>
+                                        <p>(2)Through ClonExpress technology, construct recombinant plasmids by ClonExpress technolog using FdeR gene and   AP-t7-A  vector  37 ℃ 30min</p>
+                                        <p>(3)Transformate the recombinantal plasmids of AP-T7-A-FdeR and AP-T7-A-GFP into DH5α competent cell</p>
+                                    </div>
+                                    <img src="../img/glue-left.png" alt="" class="aug-week3-glue-left">
+                                    <img src="../img/aug&week3-2.jpeg" alt="" class="AUG-Week3-Img">
+                                    <img src="../img/glue-right.png" alt="" class="aug-week3-glue-right">
+                                    <h1 class="title">Day6</h1>
+                                    <img src="../img/number6.png" alt="" class="number-right">
+                                    <img src="../img/n_line.png" alt="" class="line">  
+                                    <p>2023/8/20</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: H.T.Q</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1. Fastpure Gel DNA extraction </p>
+                                        <p>Marker: DL 5000, 120V, 25min</p>
+                                        <p>ep 4-2: sent for sequencing</p>
+                                        <p>2. Clonexpress</p>
+                                        <p>(1) Vector: pQE-Vec-3: 132.3 ng/μL (It needs to be diluted 10 times)</p>
+                                        <p>(2) Insert fragment: </p>
+                                        <p>① ep1-pQE: 11.15ng/μL</p>
+                                        <p>② ep-pQE fragment-2: 15.47ng/μL</p>
+                                        <p>③ ep 5-2:19.51 ng/μL</p>
+                                        <p>④ ep-6: 10.36 ng/μL</p>
+                                        <p>3. Transform the ep-plasmids into DH5α competent cell</p>
+                                        <p>Resistance: KanR</p>
+                                        <p>heat shock for 60s</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.Design a pair of primers to homologously recombine the Mid2, High2 and AP-P-T7RNAP.</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: L.Y</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>Get the sequence results</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>There are so many unexcepted mutantations on the fdeR gene sequence.</p>
+                                    </div>
+                                    
+                                </div>
+                                <img src="../img/vertical-line.png" alt="">
+                                <div class="right">
+                                    <img src="../img/glue-left.png" alt="" class="aug-week3-glue-left-1">
+                                    <img src="../img/aug&week3-1.jpg" alt="" class="AUG-Week3-Img-1">
+                                    <img src="../img/glue-right.png" alt="" class="aug-week3-glue-right-1">
+                                    <h1 class="title">Day2</h1>
+                                    <img src="../img/number2.png" alt="" class="number-left">
+                                    <img src="../img/n_line.png" alt="" class="line">
+                                    <p>2023/8/16</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: H.T.Q</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1. error-prone PCR to obtain mutant fragments (25 round)</p>
+                                        <p>(1) pQE-fdeR (985bp)</p>
+                                        <p>① primers: ep-fragment-F</p>
+                                        <p>PCR-fragemnt-R-ep2-0814</p>
+                                        <p>② Tm: 57℃</p>
+                                        <p>(2) AP-A-fdeR (981bp)</p>
+                                        <p>① primers: APA-epPCR-fragment-F-0812</p>
+                                        <p>PCR-fragment-R-ep2-0814</p>
+                                        <p>②Tm: 58℃</p>
+                                        <p>2. PCR for examination</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: L.Y</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>send pQE-P22-FdeR plasmid  to sequence again</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>We got the sequence results of FdeR-APA plasmid</p>
+                                        <p>The target fragment had no recombination</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.PCR to obtain fragment pQE-fdeR-SplitC and pQE-fdeR-SplitD.</p>
+                                        <p>2.Gel DNA Extraction for pQE-fdeR-SplitC.</p>
+                                        <p>3.Preparation of 4 mL of Streptomycin Sulfate at a concentration of 50mg/ mL.</p>
+                                        <p>4.Transformate the pBT137-SP-T7RNAP into S2208 competentnt cell.</p>
+                                        <p>5.Dilute a saturated culture of S2208 cells in 2× YT liquid media and grow to an OD600 of 0.6–0.9</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>1.There is no band of the fragment pQE-fdeR-SplitD</p>
+                                        <p>2.Concentation:</p>
+                                        <p>pQE-fdeR-SplitC-C1: 126.89 ng/μL, 2.02, 0.44</p>
+                                        <p>pQE-fdeR-SplitC-C2: 121.75 ng/μL, 1.98, 2.08</p>
+                                    </div>
+                                    
+                                    <h1 class="title">Day4</h1>
+                                    <img src="../img/number4.png" alt="" class="number-left">
+                                    <img src="../img/n_line.png" alt="" class="line">
+                                    <p>2023/8/18</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: H.T.Q</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>Pre-experiment for liquiritigenin ( positive clone-2/14)</p>
+                                        <p>(1) 600μL bacterial solution was centrifuged at 5000 rpm for 3 min after the induction culture completed, and then discard the supernatant. 600 μL cold PBS buffer was pipetted and resuspended for 2 times, and 200μL was taken into a 96-well fluorescent plate.</p>
+                                        <p>(2) Samples were taken from the and fluorescence detected with a microplate reader (Ex=476nm/ Ex=514nm and Ex=486nm/ Ex=528nm and Ex=478nm/ Ex=516nm)</p>
+                                        <p>(3) Induction culture at 37 °C for 12 h...(to be continue...)</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.Construct recombinant plasmids by ClonExpress technolog using     pQE-fdeR-SplitC gene and pQE-fdeR-SplitD vector.</p>
+                                        <p>2.Preservation of strains containing the plasmid of pBT137-SplitC  using a 50% glycerol solution at -80℃</p>
+                                        <p>3.Plasmid extraction for the plasmid of pBT137-SplitC.</p>
+                                        <p>4.Transform the plasmid of pQE-fdeR-RBS into DH5α</p>
+                                        <p>6.Golden Gate assembly of the plasmid of  pBT137-SP-T7RNAP.</p>
+                                        <p>7.Autoclave sterilization of 1.5 mL, 2 mL centrifuge tubes, 50% glycerol, 200μL pipette tips, LB liquid medium sterilization</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-green"></div>
+                                        <p>Result:</p>
+                                        <p>3.Concentration:</p>
+                                        <p>P-SplitC-1: 141.36 ng/μL, 1.93, 2.18</p>
+                                        <p>P-SplitC-2: 195.75 ng/μL, 1.93, 2.22</p>
+                                        <p>P-SplitC-3: 123.64 ng/μL, 1.74, 0.99</p>
+                                        <p>P-SplitC-4: 203.36 ng/μL, 1.95, 2.24</p>
+                                        <p>P-SplitC-5: 348.46 ng/μL, 1.89, 1.70</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Y.Y.X</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>Construct recombinant plasmids by </p>
+                                        <p>ClonExpress technology using split C and split D.</p>
+                                    </div>
+                                    <h1 class="title">Day5</h1>
+                                    <img src="../img/number5.png" alt="" class="number-left">
+                                    <img src="../img/n_line.png" alt="" class="line">
+                                    <p>2023/8/19</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: H.T.Q</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1. Plasmid extraction for 2023quanhecheng gene</p>
+                                        <p>Resistance: Amp (bla gene)</p>
+                                        <p>2.  Preservation of 2023quanhecheng gene in PUC57 strains using a 50% glycerol solution at -80℃</p>
+                                        <p>2023quanhecheng gene in PUC57 * 4</p>
+                                        <p>Resistance: Amp (bla gene)</p>
+                                        <p>3. error-prone PCR to obtain mutant fragments (25 round) and sequencing</p>
+                                        <p>Template: pQE-P22</p>
+                                        <p>Gradient of enhancer: 4μ, 5μ, 6μ</p>
+                                        <p>Tm: 57℃, Extension 2min (Extended time)</p>
+                                        <p>4. Pre-experiment for liquiritigenin ( positive clone-2/14) (After 24h)</p>
+                                        <p>(1) 600μL bacterial solution was centrifuged at 5000 rpm for 3 min after the induction culture completed, and then discard the supernatant. 600 μL cold PBS buffer was pipetted and resuspended for 2 times, and 200μL was taken into a 96-well fluorescent plate.</p>
+                                        <p>(2) Samples were taken from the and fluorescence detected with a microplate reader (Ex=476nm/ Ex=514nm and Ex=486nm/ Ex=528nm and Ex=478nm/ Ex=516nm)</p>
+                                        <p>5. PCR to obtain vector used for error-prone experiment</p>
+                                        <p>(1) Template:  pQE-vector (5032bp)</p>
+                                        <p>(2) primers: APA-ep-vector-F2</p>
+                                        <p>pQE-epvector(final)-R-0814</p>
+                                        <p>(3) Tm: 57℃, extension 200s (3min20s)</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.Colony PCR to verfied if the selected colonies containing the recombinant plasimd of pQE-fdeR-RBS</p>
+                                        <p>2.Transform the plasmid of pBT137-SP-T7RNAP into S2208 competentnt cell.</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: L.Y</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>(1)Pick single colonies from the FdeR-1,FdeR-2,FdeR-3;</p>
+                                        <p>(2)Colony PCR to verfied if the selected colonies containing the recombinant plasimd of AP-T7-A-FdeR</p>
+                                        <p>(3)Send AP-T7-A vector and fragment of FdeR /GFP to sequence and wait for the results</p>
+                                    </div>
+                                    <h1 class="title">Day7</h1>
+                                    <img src="../img/number7.png" alt="" class="number-left">
+                                    <img src="../img/n_line.png" alt="" class="line">
+                                    <p>2023/8/21</p>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: H.T.Q</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1. Colony PCR to verfied if the selected colonies containing the recombinant plasimd of  ep-pQE recombinant plasmids</p>
+                                        <p>(1) Template: </p>
+                                        <p>① ep-pQE-1 *4</p>
+                                        <p>② ep-pQE-2 *4</p>
+                                        <p>③ ep 5-2 *4</p>
+                                        <p>④ ep 6 *4</p>
+                                        <p>(2) Tm 56℃, extension 18s</p>
+                                        <p>(3) Primers: P22-R/F</p>
+                                        <p>2. Select the positive clone to culture</p>
+                                        <p>ep-pQE-1: 1 & 3</p>
+                                        <p>ep-pQE-2: 1 & 3</p>
+                                        <p>ep5-2: 1 & 2</p>
+                                        <p>ep6: 1 & 2</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-red"></div>
+                                        <p>Member: Z.M.L</p>
+                                    </div>
+                                    <div class="circleOuter">
+                                        <div class="circle-yellow"></div>
+                                        <p>Experiment:</p>
+                                        <p>1.Palsmid Extraciton for pQE-fdeR-RBS and sequence</p>
+                                        <p>2.PCR to obtain the Mid2 and High2 with random sequence at the both side.</p>
+                                        <p>3.PCR to verify if the strain containing the plasmid of pBT137-SplitC</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <section class="footer">
+            <div class="grid-wrapper">
+                <div class="footer1">
+                    <h1 class="private">Tech Bees</h1>
+                    <p class="bottom">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ab beatae itaque
+                        ipsam
+                        corporis maxime
+                        saepe, voluptatum sapiente veritatis repellat!</p>
+                    <div class="social-profiles">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="col3 footer2 fleft">
+                    <h1>Contact Info</h1>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <h4>412616516</h4>
+                    <h4>@kjfhsdakf</h4>
+                    <h4>website.com</h4>
+                </div>
+                <div class="col3 footer3 fmid">
+                    <h1>Contact Us</h1>
+                    <h4>Company</h4>
+                    <h4>Events</h4>
+                    <h4>Projects</h4>
+                    <h4>Awards</h4>
+                    <h4>Open sources</h4>
+                </div>
+                <div class="col3 footer4">
+                    <h1>Custom Software</h1>
+                    <h4>Company</h4>
+                    <h4>Events</h4>
+                    <h4>Projects</h4>
+                    <h4>Awards</h4>
+                    <h4>Open sources</h4>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <h4>Copyright Hyc</h4>
+                <h4>Teams & Members</h4>
+                <h4>Privacy</h4>
+            </div>
+            <!-- scroll to top btn -->
+            <i id="scrolltp" class="fa fa-arrow-up"></i>
+        </section>
+
+</body>
+
+<script src="../javascript/n_content.js"></script>
+
+<script src="../javascript/n_nav.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
