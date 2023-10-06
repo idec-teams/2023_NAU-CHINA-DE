@@ -22,6 +22,9 @@
 </head>
 
 <body>
+    <div id="loader">
+        <img src="./img/loader.gif" alt="Loading...">
+    </div>
     <div class="header">
         <div>
             <nav class="navbar navbar-expand-md">
@@ -136,6 +139,7 @@
             dolor ut aliquam aspernatur quibusdam provident accusantium, quod quis, nihil temporibus dolores
             exercitationem dolorum?
         </div>
+        <img src="./img/i_line.png" alt="" src="" class="i-line">
         <div class="grid-wrapper">
             <div class="section1-mem p1" data-aos="slide-up">
                 <div class="picture"><img src="./img/theme1.png" alt=""></div>
@@ -327,6 +331,17 @@
         <!-- scroll to top btn -->
         <i id="scrolltp" class="fa fa-arrow-up"></i>
     </section>
+
+    <!-- 加载动画 -->
+    <script>
+        window.addEventListener('load', function() {
+  var loader = document.getElementById('loader');
+  
+    setTimeout(function() {
+        loader.style.display = 'none';
+    }, 2000);
+    });
+    </script>
 
     <!-- 导航栏二级 -->
     <script>

@@ -12,16 +12,36 @@
     box-sizing: border-box;
 }
 
+
+
 body {
-    /* font-family: 'Courier New', Courier, monospace; */
     font-family: myFont , Arial, sans-serif !important;
     /* line-height: 27pt !important; */
     font-size: 16px !important;
     background-color: rgb(237, 243, 235);
 }
 
+#loader {
+position: fixed;
+  top: 0;   
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(37, 80, 42); /* 背景颜色，可以根据需要进行调整 */
+  z-index: 999999;
+}
+#loader img{
+    padding-top: 100px;
+    width: 40% !important;
+    height:auto;
+}
+
 body h1 {
     color: #282f59;
+    font-weight: 400;
 }
 
 body p {
@@ -67,6 +87,7 @@ body a {
     width: 100% !important;
     padding: 1px 50px !important;
     align-items: center !important;
+    font-family: var(--bs-body-font-family);
 }
 
 .navbar ul {
@@ -274,8 +295,17 @@ body a {
 .section1 .text {
     margin: 5px 150px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 20px;
     color: #000000;
+}
+
+.i-line{
+    width: 90%;
+    position: relative;
+    top:-100px; 
+    left: 120px;
+    z-index: -100;
+    margin-bottom: -100px;
 }
 
 .grid-wrapper,
@@ -525,6 +555,7 @@ body a {
     /* background-image: url("./images/footer-agency.png"); */
     background-color: rgb(37, 80, 42) !important;
     background-size: cover !important;
+    font-family: var(--bs-body-font-family);
 }
 
 /* 独特的文字 */
