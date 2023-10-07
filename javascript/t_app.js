@@ -34,6 +34,14 @@ function frount() {
     imgs[current].style.transform = `translateZ(280px)`;
 };
 
+window.addEventListener('load', function() {
+    var loader = document.getElementById('loader');
+    
+      setTimeout(function() {
+          loader.style.display = 'none';
+      }, 2000);
+      });
+
 function bind() {
     for(var i=0 ;i<len;i++){
         (function (i) {

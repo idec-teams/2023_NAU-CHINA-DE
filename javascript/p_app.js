@@ -17,4 +17,10 @@ window.addEventListener("scroll", function () {
     scrolltp.style.opacity = 0;
   }
 });
-
+window.addEventListener('load', function() {
+  var loader = document.getElementById('loader');
+  
+    setTimeout(function() {
+        loader.style.display = 'none';
+    }, 2000);
+    });

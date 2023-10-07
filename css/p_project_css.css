@@ -18,6 +18,25 @@ body {
     background-color: rgb(237, 243, 235);
 
 }
+
+#loader {
+    position: fixed;
+      top: 0;   
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(37, 80, 42); /* 背景颜色，可以根据需要进行调整 */
+      z-index: 999999;
+    }
+    #loader img{
+        padding-top: 100px;
+        width: 40% !important;
+        height:auto;
+    }
+    
 li{
     text-decoration: none;
     list-style: none;
@@ -372,6 +391,9 @@ body a {
 }
 .fr{
     margin-top: 10700px !important;
+}
+.fd{
+    margin-top: 3200px !important;
 }
 
 /* 独特的文字 */
