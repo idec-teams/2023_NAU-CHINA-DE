@@ -36,12 +36,11 @@ a{
 /* header */
 /* header */
 .header {
-    
     /* background-image: url("./images/header-bg.png"); */
     background-repeat: no-repeat;
     position: sticky;
     top: 0;
-    z-index: 999999;
+    z-index: 99999;
 }
 
 .navbar {

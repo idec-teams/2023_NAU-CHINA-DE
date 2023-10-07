@@ -21,6 +21,11 @@
 body{
     font-family: "Comic Sans MS" !important;
 }
+/* 加粗文字 */
+.strong{
+    font-size:22px;
+    font-weight: 400;
+}
 /* 右上角位置Day2 */
 .rightTop{
     margin-top: 50px;
