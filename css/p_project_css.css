@@ -287,6 +287,9 @@ body a {
     transition-property: opacity,left;
     transition-duration:0.8s ;
 }
+.s3{
+    height: 570 px;
+}
 .sidesup{
     height: 190px;
 }
@@ -366,6 +369,9 @@ body a {
 }
 .fp{
     margin-top: 9800px !important;
+}
+.fr{
+    margin-top: 10700px !important;
 }
 
 /* 独特的文字 */
