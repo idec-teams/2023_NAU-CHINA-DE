@@ -47,6 +47,7 @@ body h1 {
 body p {
     color: black;
     font-size: 22px;
+    text-indent: 2em;
 }
 
 body a {
@@ -334,8 +335,8 @@ body a {
 }
 .section2 .notCircle{
     margin-top:-30px;
-    width:150%;
-    margin-left:10px;
+    width:160%;
+    margin-left:-85px;
 }
 
 .container {
@@ -455,12 +456,20 @@ body a {
     height: 4px;
     background: #fc036b;
     margin-left: 80px;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     border-radius: 5px;
 }
 
 .section4 p {
-    padding-left: 5rem;
+    margin-left: 40px;
+    /* text-alig
+    n: center; */
+}
+.section4 .littleTitle{
+    text-indent: 0;
+    text-align: center;
+    margin-left: -120px;
+    margin-top:5px;
 }
 
 .section4 .right {
@@ -468,7 +477,8 @@ body a {
 }
 
 .section4 .right img {
-    width: 100%;
+    margin-left: 20px;
+    width: 80%;
 }
 
 /* section5 */
@@ -582,7 +592,7 @@ body a {
     margin-top: -95px;
 }
 .footerLogo{
-    width:150px !important;
+    width:120px !important;
     height: auto !important;
     margin-right: 20px;
 }
