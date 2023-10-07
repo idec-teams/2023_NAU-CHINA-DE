@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: myFont;
-    src: url(../css/江西拙楷2.0.TTF) format('truetype');
+    src: url(../css/CENTAUR.TTF) format('truetype');
 }
 /* Global */
 * {
@@ -387,15 +387,17 @@ body a {
     margin-top: 18200px !important;
 }
 .fp{
-    margin-top: 9800px !important;
+    margin-top: 9000px !important;
 }
 .fr{
-    margin-top: 10700px !important;
+    margin-top: 10300px !important;
 }
 .fd{
     margin-top: 3200px !important;
 }
-
+.fde{
+    margin-top: 4200px !important;
+}
 /* 独特的文字 */
 .private {
     top: -80px;
