@@ -14,6 +14,24 @@ a{
     text-decoration: none;
 }
 
+/* 加载动画 */
+#loader {
+    position: fixed;
+      top: 0;   
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(37, 80, 42); /* 背景颜色，可以根据需要进行调整 */
+      z-index: 999999;
+    }
+    #loader img{
+        padding-top: 100px;
+        width: 40% !important;
+        height:auto;
+    }
 /* 导航栏 */
 /* header */
 /* header */
@@ -22,10 +40,11 @@ a{
     background-repeat: no-repeat;
     position: sticky;
     top: 0;
-    z-index: 999999;
+    z-index: 99999;
 }
 
 .navbar {
+    font-family: "var(--bs-body-font-family)";
     background-color: rgb(210, 230, 178) !important;
     top: 0 !important;
     left: 0 !important;
@@ -215,7 +234,7 @@ a{
 
 @keyframes slide-in {
     from {
-      height: 60px;
+      height: 50px;
     }
     to {
       height: 90px;
@@ -225,10 +244,9 @@ a{
 .leftlabel:hover {
     border-bottom: transparent;
     cursor: pointer;
-    /* height: 90px; */
+    /* height: 190px; */
     background-color: rgb(237, 243, 235) !important;
     animation: slide-in 1s;
-    width:118.35px;
 }
 
 
@@ -244,7 +262,6 @@ a{
     height: 250px;
     width: 60px;
     position: absolute;
-    top: calc(100% + 10px); /* 设置相对位置的偏移量，可根据实际需求调整 */
     z-index: 9999;
     display: none;
     border-bottom: 2px solid rgb(37, 80, 42);
@@ -279,12 +296,20 @@ a{
     line-height: 60px;
     background-color: rgb(237, 243, 235);
     text-align: center;
-    border-bottom: 1px solid rgb(37, 80, 42);
+    border-bottom: 2px dashed rgb(37, 80, 42);
+    border-top: 0px;
     cursor: pointer;
-
 }
+
 .week-div div:hover{
     display: block;
+}
+
+.firstWeek{
+    border-top: 2px solid rgb(37, 80, 42) !important;
+}
+.lastWeek{
+    border-bottom: 2px solid rgb(37, 80, 42) !important;
 }
 
 .click {
@@ -440,6 +465,7 @@ hr {
 
 /* Footer */
 .footer {
+    font-family: "var(--bs-body-font-family)" !important;
     margin-top: 80px !important;
     /* background-image: url("./images/footer-agency.png"); */
     background-color: rgb(37, 80, 42) !important;
