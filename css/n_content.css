@@ -1,4 +1,26 @@
+/* 加载动画 */
+#loader {
+    position: fixed;
+      top: 0;   
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(37, 80, 42); /* 背景颜色，可以根据需要进行调整 */
+      z-index: 999999;
+    }
+    #loader img{
+        padding-top: 100px;
+        width: 40% !important;
+        height:auto;
+    }
+
 /* 内容部分 */
+body{
+    font-family: "Comic Sans MS" !important;
+}
 /* 右上角位置Day2 */
 .rightTop{
     margin-top: 50px;
@@ -451,6 +473,139 @@
     right:103px;
 }
 .vertical-line1{
-    width:8px;
     margin-top: 30px;
+}
+.aug-dl-1{
+    width:80% !important;
+    height:auto;
+    margin-left:65px;
+    margin-top:220px;
+    margin-bottom:120px;
+}
+.aug-dl-2{
+    width:70% !important;
+    height:auto;
+    margin-left:65px;
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+.aug-dl-3{
+    width:80% !important;
+    height:auto;
+    margin-left:65px;
+    margin-top:125px;
+    margin-bottom: 50px;
+}
+.aug-dl-left-1{
+    width: 12% !important;;
+    position: absolute;
+    top:425px;
+    right:548px;
+}
+.aug-dl-right-1{
+    width: 12% !important;;
+    position: absolute;
+    top:710px;
+    right:103px;
+}
+.aug-dl-left-2{
+    width: 12% !important;;
+    position: absolute;
+    top:1245px;
+    right:853px;
+}
+.aug-dl-right-2{
+    width: 12% !important;;
+    position: absolute;
+    top: 964px;
+    right:1226px;
+}
+.aug-dl-left-3{
+    width: 12% !important;;
+    position: absolute;
+    top:1390px;
+    right:548px;
+}
+.aug-dl-right-3{
+    width: 12% !important;;
+    position: absolute;
+    top:1695px;
+    right:103px;
+}
+
+.sep-dl-1{
+    width:62% !important;
+    height:auto;
+    margin-left:120px;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+.sep-dl-2{
+    width:80% !important;
+    height:auto;
+    margin-left:65px;
+    margin-top:170px;
+    margin-bottom: 150px;
+}
+.sep-dl-3{
+    width:80% !important;
+    height:auto;
+    margin-left:65px;
+    margin-top:125px;
+    margin-bottom: 150px;
+}
+.sep-dl-4{
+    width:80% !important;
+    height:auto;
+    margin-left:65px;
+    margin-top:175px;
+    margin-bottom: 50px;
+}
+.sep-dl-left-1{
+    width: 12% !important;;
+    position: absolute;
+    top:250px;
+    right:488px;
+}
+.sep-dl-right-1{
+    width: 12% !important;;
+    position: absolute;
+    top:500px;
+    right:113px;
+}
+.sep-dl-left-2{
+    width: 12% !important;;
+    position: absolute;
+    top:1145px;
+    right:793px;
+}
+.sep-dl-right-2{
+    width: 12% !important;;
+    position: absolute;
+    top: 764px;
+    right:1256px;
+}
+.sep-dl-left-3{
+    width: 12% !important;;
+    position: absolute;
+    top:1490px;
+    right:548px;
+}
+.sep-dl-right-3{
+    width: 12% !important;;
+    position: absolute;
+    top:1995px;
+    right:1250px;
+}
+.sep-dl-left-4{
+    width: 12% !important;;
+    position: absolute;
+    top:2190px;
+    right:848px;
+}
+.sep-dl-right-4{
+    width: 12% !important;;
+    position: absolute;
+    top:1695px;
+    right:103px;
 }

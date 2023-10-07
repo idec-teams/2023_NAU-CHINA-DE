@@ -45,7 +45,8 @@ body h1 {
 }
 
 body p {
-    color: #7C7C7C;
+    color: black;
+    font-size: 22px;
 }
 
 body a {
@@ -246,35 +247,6 @@ body a {
 .section0 img {
     width: 100%;
 }
-
-
-/* 图片轮播部分 */
-.rotate {
-    margin-top: 200px;
-}
-
-.rotate-img {
-    width: 300px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    border-radius: 8px;
-    transition: transform 1s ease-in-out;
-}
-
-.rotate .wrapper {
-    top: 50px;
-    /* position: relative; */
-    width: 100%;
-    height: 100%;
-    perspective: 800px;
-    transform-style: preserve-3d;
-}
-
 
 /* section1 */
 .section1 {
@@ -557,6 +529,9 @@ body a {
     background-size: cover !important;
     font-family: var(--bs-body-font-family);
 }
+.footer a:hover{
+    color:chocolate;
+}
 
 /* 独特的文字 */
 .private {
@@ -568,15 +543,18 @@ body a {
     z-index: 0;
 }
 
-.col3 {
+.col4 {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+}
+.col4 h1{
+    margin-bottom: 30px;
 }
 
 .fleft {
-    margin-left: 75px;
+    margin-left: 150px;
 }
 
 .fmid {
@@ -587,16 +565,20 @@ body a {
     color: whitesmoke;
     margin-top: 20px;
 }
-
+.footer1{
+    width:600px;
+}
 .footer1 h1 {
     font-size: 120px;
     margin-bottom: 30px;
 }
-
-.footer1 i {
-    margin: 50px 20px;
-    font-size: 22px;
-    color: whitesmoke;
+.upper{
+    margin-top: -95px;
+}
+.footerLogo{
+    width:150px !important;
+    height: auto !important;
+    margin-right: 20px;
 }
 
 .footer2 h4,
