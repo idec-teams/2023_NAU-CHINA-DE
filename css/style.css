@@ -423,6 +423,10 @@ body a {
     top:120px;
     left:100px;
 }
+.text1 p{
+    font-size: 26px !important;
+    font-weight: 700;
+}
 .text1 .text11{
     text-indent: 5em;
 }
@@ -430,6 +434,10 @@ body a {
     position: absolute;
     top:550px;
     left:250px;
+}
+.text2 p{
+    font-size: 26px !important;
+    font-weight: 700;
 }
 /* .section3 {
     position: relative;

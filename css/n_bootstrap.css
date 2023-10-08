@@ -252,8 +252,8 @@ sup {
 }
 
 a {
-  color: var(--bs-link-color);
-  text-decoration: underline;
+  color: whitesmoke;
+  /* text-decoration: underline; */
 }
 a:hover {
   color: var(--bs-link-hover-color);
