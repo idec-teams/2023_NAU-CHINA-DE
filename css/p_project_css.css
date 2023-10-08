@@ -264,7 +264,7 @@ body a {
 .page{
     position: absolute;
     width: 1250px;
-    background-color: #d7dd7c;
+    background-color: rgb(238,253,231);
     right: 40px;
     border-radius: 20px;
     top: 980px;
