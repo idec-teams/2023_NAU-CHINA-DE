@@ -110,7 +110,7 @@ th {
    <div class="page">
     <div class="section">
         <h1 id="b">Materials</h1>
-        <p><strong style="font-size: 25px;">Biological materials</strong></p>
+        <p><strong >Biological materials</strong></p>
         <table style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;">
             <tbody><tr>
                 <th>Names</th>
@@ -142,7 +142,7 @@ th {
                 <td>Addgene</td>
             </tr>
         </tbody></table>
-        <p><strong style="font-size: 25px;">Plasmids</strong></p>
+        <p><strong >Plasmids</strong></p>
         <table style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;">
             <tbody><tr>
                 <th>Names</th>
@@ -234,7 +234,7 @@ th {
                 <td>Construction of selection phage</td>
             </tr> 
         </tbody></table>
-        <p><strong style="font-size: 25px;">Primers</strong></p>
+        <p><strong >Primers</strong></p>
         <table style="border:black 2px solid;text-align: center;align-items: center;margin: 0 auto;">
             <tbody>
                 <tr><th>No.</th>
@@ -514,7 +514,7 @@ th {
                 <td>Error-prone PCR to obtain pQE-80L used for vector</td>
             </tr>
         </tbody></table>
-        <p><strong style="font-size: 25px;">Reagents</strong></p>
+        <p><strong>Reagents</strong></p>
         <p>YEAST EXTRACT (OXOID, cat. no. LP0021) TRYPTONE (OXOID,cat. no. LP0042) NaCl (HUSHI,cat. no. 10019318)
             X-Gal (Solarbio, cat. no. R0404) <br>
             Agar (Solarbio, cat. no. A8190) <br>
@@ -543,7 +543,7 @@ th {
             1×PBS(Solarbio, cat. P1020) <br>
             10×PBS(Solarbio, cat. P1022) <br>
             </p>
-            <p><strong style="font-size: 25px;">Equipment</strong></p>
+            <p><strong >Equipment</strong></p>
             <p>Biological shaker (Shanghai Zhichu Instruments, cat. no. ZHTY-50ES) <br>
                 Benchtop centrifuge (Thermo Fisher Scientific, cat. no. 75007201) <br>
                 Electrophoresis(Beijing Liuyi, cat. no. DYY-6C) <br>
@@ -556,28 +556,28 @@ th {
     </div>
     <div class="section">
         <h1 id="p">Methods</h1>
-        <p><strong style="font-size: 25px;">Preparation</strong></p>
-        <p><strong >Mention of plasmid</strong> <br>
+        <p><strong >Preparation</strong></p>
+        <p><strong >Extraciton of plasmid</strong> <br>
             According to the kit instructions for Nanjing Vazyme. <br>
             <strong>PCR fragment and vector</strong> <br>
             The obtained plasmids are subjected to PCR using different programs and primers. <br>
 PCR fragment and vector respectively with corresponding primers. <br>
 After agarose gel electrophoresis, we extract DNA from the gel. The products are stored at -20 ℃ for subsequent use. <br>
         </p>
-        <p><strong style="font-size: 25px;">Setting mutation conditions</strong></p>
+        <p><strong >Setting mutation conditions</strong></p>
         <p><strong >Error-prone PCR</strong>
             Use StarMut Random Mutagenesis Kit. Multiple small system (20μL) amplification pre-experiments were carried out, setting a series of StarMut Enhancer gradients. According to the PCR results and the mutation rate in the instructions, Enhancer volume (4μL) was determined.
           <br>  <strong >Site-directed mutagenesis</strong>
             With the help of two bioinformatic tools: AlphaFold2 and AutoDock 4.2.6, we spot three mutational residues: L268W、H170Y、H170W. Several pairs of degenerate primer were designed to randomly introduce mutations in fdeR.
         </p>
-        <p><strong style="font-size: 25px;">Mutation</strong></p> 
+        <p><strong >Mutation</strong></p> 
         <p><strong >Error-prone PCR of <em>fdeR</em> </strong>
             Using the error-prone PCR kit (Gene-star company) in a total volume of 25 μL using template 10 ng of pQE-80L-fdeR plasmid as template , 10μL 2×StarMut Random PCR Mix , 10 mM Gen 2-F, 10 μM Gen 2-R each, Star Mut enhancer 6 μL, sterile water was made up to 25 μL, 53.1℃) or error-prone PCR on <em>fdeR</em> fragments. Subsequently, the above <em>fdeR</em> gene fragments were sequenced by Sanger Sequence. Then based on the sequencing results, the number of mutated bases per thousand bases was calculated. Meanwhile, the linearized vector and the above fragments were assembled by ClonExpress II One Step Cloning Kit (Vazyme, Nanjing, China). <em>E.coli BL21</em> was used for subsequent chemical transformation.
            <br> <strong >Site-Directed Mutation of FdeR</strong>
             For construction of the single and double mutants of <em>fdeR</em>, the template the pQE-80L-fdeR plasmid was used along with a suitable combination of primers(Table S3).Three pairs of primers were designed to introduce three mutations (H170W,H170Y,L268W) on two sites in FdeR. The whole pQE-80L-fdeR plasmid was divided into two or three parts and then amplified by two or three pairs of primers(Table S3). The consequent two or three fragments with introduced mutations were combined with ClonExpress II One Step Cloning Kit or ClonExpress MultiS One Step Cloning Kit (Vazyme, Nanjing, China), which is a cloning kit based on homologous recombination. <em>E.coli DH5α</em>  was used for subsequent chemical transformation. The plasmids from individual transformants were used to DNA sequence to confirm that correct mutation was obtained. Than, plasmids with correct mutations were transformed into <em>E. coli BL21</em> . Randomly select individual colonies for fluorescence screening.
 
         </p>
-        <p><strong style="font-size: 25px;">Bioinformatics analysis</strong></p> 
+        <p><strong >Bioinformatics analysis</strong></p> 
         <p><strong>Molecular Docking</strong> <br>
             We used AutoDock 4.2.6 28 for protein-small molecule docking. We obtained the 3D structure of the protein receptor using AlphaFold2 (Figure S10), and then performed a series of operations such as adding hydrogen, merging non-polar hydrogen, assigning Gasteiger charges, and storing it as a PDBQT format file. We obtained the planar conformation of liquiritigenin from PubChem, and then used OpenBabel to perform conformational conversion to form the optimal three-dimensional conformation required for docking and store it as a mol2 format file (Figure S9). Using AutoDockTools (ADT), we performed operations such as adding hydrogen and merging non-polar hydrogen atoms on liquiritigenin, and calculated the Gasteiger-Huiekel charges. The ligand was also stored as a PDBQT format file. <br>
             We chose the LGA algorithm for energy optimization, and set the relevant parameters of the Autogrid4 docking box and the Autodock4 docking program, and finally obtained a variety of docking conformations clustered by binding energy and RMSD - the computer selected the docking result with the lowest binding energy, and then used this docking conformation as a reference to compare other docking results. Compared with the control, those with a mean square deviation and structural difference of less than 0.5 Å were grouped into one group (cluster), and those with a difference of more than 0.5 Å were divided into another group. The different docking results in the same group were also sorted by binding energy and compared with the first one in the group. Those with a difference of less than 0.5 Å were left in the group, and those with a difference of more than 0.5 Å were re-grouped, and so on. <br>
@@ -588,11 +588,11 @@ After agarose gel electrophoresis, we extract DNA from the gel. The products are
             <strong>Molecular dynamics (MD) simulations</strong> <br>
             The molecular dynamics (MD) simulations were carried out by GROMACS 2020.3 software. The amber99sb-ildn force field and the general Amber force field (GAFF) were used to generate the parameter and topology of proteins and ligands, respectively. The simulation box size was optimized with the distance between each atom of the protein and the box greater than 1.0 nm. Then, fill the box with water molecules based on a density of 1. To make the simulation system electrically neutral, the water molecules were replaced with Cl- and Na+ ions. Following the steepest descent method, energy optimization of 5.0×10<sup>4</sup> steps was performed to minimize the energy consumption of the entire system, and finally to reduce the unreasonable contact or atom overlap in the entire system. After energy minimization, first-phase equilibration was performed with the NVT ensemble at 300 K for 100 ps to stabilize the temperature of the system. Second-phase equilibration was simulated with the NPT ensemble at 1 bar and 100 ps. The primary objective of the simulation is to optimize the interaction between the target protein and the solvent and ions so that the simulation system is fully pre-equilibrated. All MD simulations were performed for 50 ns under an isothermal and isostatic ensemble with a temperature of 300 K and a pressure of 1 atmosphere. The temperature and pressure were controlled by the V-rescale and Parrinello-Rahman methods, respectively, and the temperature and pressure coupling constants were 0.1 and 0.5 ps, respectively. Lennard-Jones function was used to calculate the Van der Waals force, and the nonbond truncation distance was set to 1.4 nm. The bond length of all atoms was constrained by the LINCS algorithm. The long-range electrostatic interaction was calculated by the Particle Mesh-Ewald method with the Fourier spacing 0.16 nm.
         </p>
-        <p><strong style="font-size: 25px;">Transformation</strong></p> 
+        <p><strong >Transformation</strong></p> 
         <p>Competent cells were thawed on ice. Pre-cooled plasmid mixture was added (each plasmid should < 100 ng; Each transformation of up to 3 plasmids), fully mixed after 30min on ice, 42℃ water bath, heat shock 90s(For <em>S2060</em> and <em>S2208</em> strains, heat shock 75s). Put back on ice and stand for 2-3min; Add 500 microliters of LB liquid medium, shake at 37℃, 200-300rpm/min, 1h; The bacterial solution was centrifuged at 5000rpm for 3min, the appropriate supernatant was removed, and then resuspended and coated in LB solid medium(For S2060 and S2208 strains, use 2×YT solid medium) containing appropriate antibiotics and 1.5% agar at 37℃ for 10-12h.</p>
 
         
-        <p><strong style="font-size: 25px;">Screening</strong></p> 
+        <p><strong >Screening</strong></p> 
         <p><strong>Fluorescence activated cell sorting (FACS) and 96-well plates screening</strong><br>
             Cultures of <em>E. coli BL21</em>  with empty pQE-80L plasmids (Negative control) or transformed with plasmids containing eGFP reporter (Positive control). Library of FdeR mutants were grown overnight in 5 ml LB medium supplemented with 50 mg/mL kanamycin which grown on a biological shaker for 12 h at 220 rpm and 37℃. Cultures were diluted (1:100) into fresh media, grown until OD<sub>600</sub>~0.6 and induced with 0.5 mM liquiritigenin for 12 h. <br>
             The culture was diluted 10-fold in fresh liquid LB medium and analysed using FACS (BD FACSAria III, Institute of Soil Science, Chinese Academy of Sciences). A histogram plot was generated by sorting cells with empty pQE-80L plasmids and defining a negative gate as negative control. Meanwhile, using cells with plasmids containing eGFP reporter to designate a positive gate as a postive control. Two rounds of FACS counter-selection were constructed with liquiritigeni induction or naringenin induction. <br>
@@ -602,9 +602,9 @@ After agarose gel electrophoresis, we extract DNA from the gel. The products are
             The bacterial solution in 96 deep-well plate was centrifuged at 4000 rpm for 8 min after the induction culture completed, and then discard the supernatant. 1000 μL cold PBS buffer per well was pipetted and resuspended, and 200μl was taken into a 96-well fluorescent plate. Use a microplate reader to measure the fluorescence at Ex = 482 nm/Em = 524 nm and the absorbance at OD<sub>600</sub>. <br>
 
         </p>
-        <p><strong style="font-size: 25px;">Characterization and compensation test of biosensor</strong> <br>
+        <p><strong >Characterization and compensation test of biosensor</strong> <br>
             A concentration gradient of liquiritigenin ranging from 0 to 1 mM was introduced into 1 mL of bacterial culture containing kanamycin in a 96 deep-well plate, supplemented with 0.5 mM naringenin. The well-characterized variants were introduced into 5 mL of LB medium with kanamycin and incubated overnight at 37°C and 220 rpm on a shaker until reaching saturation. Plasmids were extracted using the FastPure Plasmid Mini Kit (Vazyme, Nanjing, China) and subsequently retransformed into <em>BL21(DE3)</em> competent cells (Vazyme, Nanjing, China). These cells were inoculated into 5 mL of kanamycin-supplemented LB medium and grown overnight on a Biological Shaker at 220 rpm and 37°C. Following cell resuspension, fluorescence intensity was measured using a microplate reader. <br>
-            <strong style="font-size: 25px;">Characterization and compensation test of biosensor</strong> <br>
+            <strong >Characterization and compensation test of biosensor</strong> <br>
             When measuring fluorescence, we used 1×PBS to correct for background fluorescence and optical density of the PBS (FPPBS and ODPBS, respectively) for each imposed naringenin or liquiritigenin concentration. The normalized fluorescence for optical density was calculated as follows:  <br>
             <div style="display: flex;justify-content: center; "><img class="gs"  src="../img/gs3.png" alt="" style="width: 40%;"></div>
            <p>The resulting mean each concentration of naringenin or liquiritigenin, are expressed in arbitrary units (a.u.) and were fitted with the Hill function as follow using the weighted nonlinear least-squares algorithm (curve_fit, SciPy, Levenberg−Marquardt algorithm):</p> 
@@ -617,21 +617,21 @@ After agarose gel electrophoresis, we extract DNA from the gel. The products are
     </div>
     <div class="section">
         <h1 id="O">Phage-Assisted Continuous Evolution (PACE)   </h1>
-        <p><strong style="font-size: 25px;">DP6 mutation rate assay</strong></p> 
+        <p><strong >DP6 mutation rate assay</strong></p> 
         <p>DP6 was transformed into <em>S2060 </em> and plated on Chl-resistant 2×YT plates containing 100 mM D-Glucose. Monoclones were picked and shaken till saturation in 2×YT medium containing 25 mM D-Glu and Chl; the above bacterial solution was diluted 103-fold and grown to OD<sub>600</sub> of 0.5-0.7. Samples were divided into two groups: one with 25 mM D-Glucose and the other with 25 mM arabinose, and incubated for 12h until saturation. Then,the bacterial solution was diluted by gradient and divided into two groups:one was applied to 2×YT plates containing 100 mM D-Glucose and Chl, the other was applied to 2×YT plates containing 100 mM D-Glucose and Rif. Culture them at 37°C for 18-24 h. The number of colonies of each culture on D-Glucose ± Rif plates was counted. Formula for calculating DP6 mutation rate (tbp: substituents per bp per generation): ubp = f/[R × ln(N//N0)], where f is the frequency of rifampin-resistant mutants (as compared with the glucose control), R is the number of unique sites yielding rifampin resistance (Liu et al. have identified only 21 sites across both rpoB clusters in their experiments),<sup>5</sup> N is the final population size and N0 is the population size at which resistance is first observed (empirically determined to be B1.5107). </p>
-        <p><strong style="font-size: 25px;">Transformation and storage of <em>E. coli S2060</em>  competent cells and strains prepared by chemical methods</strong></p>
+        <p><strong>Transformation and storage of <em>E. coli S2060</em>  competent cells and strains prepared by chemical methods</strong></p>
         <p>Luciferase assay, phage propagation experiment and PACE were operated in the <em>E. coli S2060</em>  strain. <br>
             Competent cells are prepared by the method below. The saturated <em>S2060 </em> solution was added to a conical flask containing 2 x YT liquid medium (Solarbio) with appropriate antibiotics and diluted 100 times. The flask was then incubated in a shaker at 37℃ at 200-300 rpm/min until the OD<sub>600</sub> of the bacterial solution was 0.4-0.6. We took and centrifuged 50 mL bacterial solution in the centrifugal tubes t 6500 rpm, 4℃ for 10 min. Discard the supernatant, and add 2 mL cold liquid LB and 2 mL cold 2×TSS (MgCl2, PEG 3350 and DMSO were added to LB medium at final concentrations of 20 mM, 10% and 5% respectively). Then, we froze the competent cells in the liquid nitrogen after mixing and dispensing them in the tubes and stored at -80℃.  <br>
             As for transformation, 100 μL competent cells defrost on the ice; add pre-cooled plasmid mixture (each kind of plasmids should < 100 ng; 3 kinds of plasmids can be transferred at most) and 100 μL 1×KCM (KCl, CaCl2 and MgCl2 were added to LB medium at final concentrations of 100 mM, 30 mM and 50 mM respectively). Put it on the ice for 10 min after being mixedthoroughly, heat shock at 42 ℃ for 75 s; put it on the ice for 2-3 min; add 500 μL SOC solution in it and put it in the biological shaker at 200-300 rpm/min for 1 h; centrifuged the bacterial solution at 8000 rpm for 2 min, discard the supernatant; plate the bacterial solution on the 2×YT solid culture (1.5% agar) with proper antibiotics after the bacterial solution being resuspended; culture at 37 ℃ for 16-18 h. A saturated bacterial solution containing the appropriate antibiotic is mixed in equal proportions with sterile glycerol and stored frozen at -80 ℃. <br> </p>
-        <p><strong style="font-size: 25px;">Construction of selection phage</strong></p> 
+        <p><strong >Construction of selection phage</strong></p> 
         <p>Golden Gate cloning was used to assemble selection phage (SP). For Golden Gate assembly, Sap Ⅰ (New England BioLabs) acted as IIS restriction endonuclease along with T4 DNA ligase (New England BioLabs). Golden Gate cloning reaction mixture was prepared as followes: 3-5 ng/kb/µL donor plasmids and 1-3 ng/kb/µL receptor (pBT137-SplitC and pBT137-SplitD). And the mixtures experienced thermal cycles (37 ℃ for 5 min,16 ℃ for 5 min, 40 cycles, 60 ℃ 5 min, 4 ℃). After this process, assemblies were transferred into S2208 competent cells.</p>
-        <p><strong style="font-size: 25px;">Activity-independent phage plaque assay</strong></p> 
+        <p><strong >Activity-independent phage plaque assay</strong></p> 
         <p>Saturated <em>S2208</em>  bacterial broth was diluted with 2×YT liquid medium containing Amp and shaken at 37°C to OD<sub>600</sub> : 0.6-0.9. Phage was diluted 3 times with sterilized water in a gradient of 10<sup>2</sup> . Transfer 10 μL of each different concentration of phage to a centrifuge tube. Add 150 μl of diluted <em>S2208</em>, then 20 μL of X-Gal (dissolve X-Gal in DMF to a final concentration of 2% (wt/vol)) solution, leave for 5 min, add 1mL of hot 2×YT top agar, mix well and pour the above mixture onto 2×YT solid agar tetrads at 37 °C for 5-8 h. Calculate the phage titer: Phage titer number of phage spots in the corresponding quadrant × dilution × 100. </p>
-        <p><strong style="font-size: 25px;">Isolation of colonies</strong></p> 
+        <p><strong >Isolation of colonies</strong></p> 
         <p>Gently touch the plaque with the tip of a P10 pipette. Place the pipette tip into 2-3 mL of DRM<sup>3</sup>, grow for 16-20 h in a biological shaker at 37℃. Centrifuge at 8000 g for 2 min. The supernatant was collected and filtered in a 1 ml syringe equipped with a PVDF filter (13 mm 0.22 μm) to obtain a phage stock solution. Its concentration was determined using an activity-independent phage plaque assay. POI fragments can also be amplified by PCR for sequencing. </p> <br>
-        <p><strong style="font-size: 25px;">Activity-dependent plaque test</strong></p> 
+        <p><strong >Activity-dependent plaque test</strong></p> 
         <p><em>S2060</em>  saturated bacterial solution transformed with AP was diluted 1000 times into DRM<sup>3</sup> medium containing appropriate antibiotics, and the culture was shaken at 37 ℃ until OD<sub>600</sub> grow to 0.4-0.6. Cells were infected with phage at a starting titer of approximately 10<sup>4</sup> PFU/ml and incubated at 37 ℃ for 16-20 h on a biological shaker. Centrifuge at 8000 g for 3 min. The supernatant was collected and filtered in a 1ml syringe equipped with a PVDF filter (13 mm 0.22 μm) to obtain phage stock solution, which was stored at -4 ℃.</p>
-        <p><strong style="font-size: 25px;">Purification of SP</strong></p> 
+        <p><strong >Purification of SP</strong></p> 
         <p>In the above transformation step, the above plasmids were replaced with a mixture product of assembled SP plasmids, heat shocked for 75 s, left on ice for 2-3 min, and then the cell mixture was directly diluted into 10ml of antibiotic-free 2×YT liquid medium at 37 ℃ for 16-18 h at 200-300 rpm/min on a biologicalshaker. 2 mL of bacterial solution was put into a centrifuge tube and centrifuged at 8000 g for 3 min. The supernatant was collected and filtered in a 1 ml syringe (Nanjing Dingbei Biotechnology co., LTD.) equipped with a PVDF filter (13 mm 0.22 μm) (Nanjing Dingbei Biotechnology co., LTD.) to obtain the phage stock solution and stored at -4℃. </p>
     </div>
     <div class="section">
