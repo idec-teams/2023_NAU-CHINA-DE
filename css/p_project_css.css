@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: myFont;
-    src: url(../css/CENTAUR.TTF) format('truetype');
+    src: url(../css/MYRIAD\ VARIABLE\ CONCEPT.OTF) format('truetype');
 }
 /* Global */
 * {
@@ -99,7 +99,7 @@ body a {
     z-index: 999;
     width: 100%;
     height: auto;
-    opacity: 0.75;
+    opacity: 1;
     
 }
 .notebookText2{
@@ -110,7 +110,7 @@ body a {
     left:23%;
     width: 55%;
     height: auto; 
-    opacity: 0.75;
+    opacity: 1;
 }
 .notebookText3{
     top:200px;
@@ -120,7 +120,7 @@ body a {
     left:10%;
     width: 80%;
     height: auto; 
-    opacity: 0.75;
+    opacity: 1;
 }
 
 
@@ -277,6 +277,10 @@ body a {
 }
 .page p{
     margin-top:10px;
+    font-size: 20px;
+}
+.page .fig{
+    font-size: 15px;
 }
 .page div{
     margin-top: 40px;
@@ -384,19 +388,19 @@ body a {
     background-size: cover !important;
 }
 .fs{
-    margin-top: 18200px !important;
+    margin-top: 16400px !important;
 }
 .fp{
     margin-top: 9000px !important;
 }
 .fr{
-    margin-top: 10300px !important;
+    margin-top: 11900px !important;
 }
 .fd{
-    margin-top: 3200px !important;
+    margin-top: 3600px !important;
 }
 .fde{
-    margin-top: 4200px !important;
+    margin-top: 4400px !important;
 }
 /* 独特的文字 */
 .private {
