@@ -273,14 +273,14 @@ body a {
 .page h1{
     text-align: center;
     margin-top: 50px;
-
+    font-size: 43px;
 }
 .page p{
     margin-top:10px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .page .fig{
-    font-size: 15px;
+    font-size: 20px;
 }
 .page div{
     margin-top: 40px;
@@ -382,45 +382,53 @@ body a {
 
 /* Footer */
 .footer {
-    margin-top: 9500px !important;
     /* background-image: url("./images/footer-agency.png"); */
     background-color: rgb(37, 80, 42) !important;
     background-size: cover !important;
+    font-family: var(--bs-body-font-family);
 }
-.fs{
-    margin-top: 16400px !important;
+.footer a:hover{
+    color:chocolate;
 }
-.fp{
-    margin-top: 9000px !important;
-}
-.fr{
-    margin-top: 11900px !important;
-}
-.fd{
-    margin-top: 3600px !important;
-}
-.fde{
-    margin-top: 4400px !important;
-}
+
 /* 独特的文字 */
 .private {
-    top: -80px;
-    background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(91, 113, 94) 50%) !important;
+    top: -110px;
+    background-image: linear-gradient(to top, rgb(237, 243, 235) 50%, rgb(37, 80, 42) 50%) !important;
     position: relative !important;
     -webkit-background-clip: text !important;
     color: transparent !important;
     z-index: 0;
 }
+.fs{
+    margin-top: 17900px !important;
+}
+.fp{
+    margin-top: 19600px !important;
+}
+.fr{
+    margin-top: 16900px !important;
+}
+.fd{
+    margin-top: 5100px !important;
+}
+.fde{
+    margin-top: 5800px;
+}
 
-.col3 {
+
+.col4 {
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+}
+.col4 h1{
+    margin-bottom: 30px;
 }
 
 .fleft {
-    margin-left: 75px;
+    margin-left: 150px;
 }
 
 .fmid {
@@ -431,16 +439,24 @@ body a {
     color: whitesmoke;
     margin-top: 20px;
 }
-
+.footer1{
+    width:600px;
+}
 .footer1 h1 {
-    font-size: 80px;
+    font-size: 120px;
     margin-bottom: 30px;
 }
-
-.footer1 i {
-    margin: 50px 20px;
-    font-size: 22px;
-    color: whitesmoke;
+.upper{
+    margin-top: -95px;
+}
+.footerLogo{
+    width:120px !important;
+    height: auto !important;
+    margin-right: 20px;
+}
+.lowerr img{
+    width:40% !important;
+    margin-left: 2px;
 }
 
 .footer2 h4,
