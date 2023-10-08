@@ -47,6 +47,7 @@ body h1 {
 body p {
     color: black;
     font-size: 22px;
+    text-indent: 2em;
 }
 
 body a {
@@ -334,8 +335,8 @@ body a {
 }
 .section2 .notCircle{
     margin-top:-30px;
-    width:150%;
-    margin-left:10px;
+    width:160%;
+    margin-left:-85px;
 }
 
 .container {
@@ -370,8 +371,52 @@ body a {
 }
 
 /* section3 */
-.section3 img{
+.section3{
+    position: relative;
+}
+.section3 .total{
+    display: flex;
+}
+.secion3 .left{
+    width: 50%;
+}
+.section3 .left .road{
+    margin-left:185px;
+    width:40%;
+}
+.section3 .left .car{
+    top:0;
+    left:245px;
+    position: absolute;
+    width:10%;
+}
+.section3 .left .people1{
+    top:100px;
+    left:520px;
+    position: absolute;
+    width:10%;
+}
+.section3 .left .people2{
+    top:520px;
+    left:90px;
+    position: absolute;
+    width:10%;
+}
+.section3 .right{
+    width:50%;
+}
+.section3 .right .xunhuan{
+    margin-top:30px;
+    margin-left:-110px;
+    position: absolute;
+    width:110%;
+}
+.section3 .bottom{
     width:100%;
+}
+.section3 .bottom img{
+    margin-left:610px;
+    width:30%;
 }
 /* .section3 {
     position: relative;
@@ -455,12 +500,20 @@ body a {
     height: 4px;
     background: #fc036b;
     margin-left: 80px;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
     border-radius: 5px;
 }
 
 .section4 p {
-    padding-left: 5rem;
+    margin-left: 40px;
+    /* text-alig
+    n: center; */
+}
+.section4 .littleTitle{
+    text-indent: 0;
+    text-align: center;
+    margin-left: -120px;
+    margin-top:5px;
 }
 
 .section4 .right {
@@ -468,7 +521,8 @@ body a {
 }
 
 .section4 .right img {
-    width: 100%;
+    margin-left: 20px;
+    width: 80%;
 }
 
 /* section5 */
@@ -582,7 +636,7 @@ body a {
     margin-top: -95px;
 }
 .footerLogo{
-    width:150px !important;
+    width:120px !important;
     height: auto !important;
     margin-right: 20px;
 }
