@@ -1,7 +1,7 @@
 /* fonts */
 @font-face{
     font-family: myFont;
-    src:url(../css/江西拙楷2.0.TTF) format('truetype');
+    src:url(../css/MYRIAD\ VARIABLE\ CONCEPT.OTF) format('truetype');
 }
 
 
@@ -407,9 +407,9 @@ body a {
 }
 .section3 .right .xunhuan{
     margin-top:30px;
-    margin-left:-110px;
+    margin-left:-300px;
     position: absolute;
-    width:110%;
+    width:150%;
 }
 .section3 .bottom{
     width:100%;
@@ -417,6 +417,19 @@ body a {
 .section3 .bottom img{
     margin-left:610px;
     width:30%;
+}
+.text1{
+    position: absolute;
+    top:120px;
+    left:100px;
+}
+.text1 .text11{
+    text-indent: 5em;
+}
+.text2{
+    position: absolute;
+    top:550px;
+    left:250px;
 }
 /* .section3 {
     position: relative;
@@ -639,6 +652,10 @@ body a {
     width:120px !important;
     height: auto !important;
     margin-right: 20px;
+}
+.lowerr img{
+    width:40% !important;
+    margin-left: 2px;
 }
 
 .footer2 h4,
