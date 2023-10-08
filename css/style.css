@@ -371,8 +371,52 @@ body a {
 }
 
 /* section3 */
-.section3 img{
+.section3{
+    position: relative;
+}
+.section3 .total{
+    display: flex;
+}
+.secion3 .left{
+    width: 50%;
+}
+.section3 .left .road{
+    margin-left:185px;
+    width:40%;
+}
+.section3 .left .car{
+    top:0;
+    left:245px;
+    position: absolute;
+    width:10%;
+}
+.section3 .left .people1{
+    top:100px;
+    left:520px;
+    position: absolute;
+    width:10%;
+}
+.section3 .left .people2{
+    top:520px;
+    left:90px;
+    position: absolute;
+    width:10%;
+}
+.section3 .right{
+    width:50%;
+}
+.section3 .right .xunhuan{
+    margin-top:30px;
+    margin-left:-110px;
+    position: absolute;
+    width:110%;
+}
+.section3 .bottom{
     width:100%;
+}
+.section3 .bottom img{
+    margin-left:610px;
+    width:30%;
 }
 /* .section3 {
     position: relative;
